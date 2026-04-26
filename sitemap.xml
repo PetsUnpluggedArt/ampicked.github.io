@@ -1,39 +1,86 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Homepage - Hub & Spoke Architecture -->
   <url>
     <loc>https://ampicked.com/</loc>
-    <lastmod>2026-04-24</lastmod>
+    <lastmod>2026-04-26</lastmod>
     <priority>1.0</priority>
     <changefreq>weekly</changefreq>
   </url>
+
+  <!-- Main Pathway Pages (High Priority - Core Content Hubs) -->
+  <url>
+    <loc>https://ampicked.com/budget-hosting-comparison.html</loc>
+    <lastmod>2026-04-26</lastmod>
+    <priority>0.95</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://ampicked.com/premium-hosting-comparison.html</loc>
+    <lastmod>2026-04-26</lastmod>
+    <priority>0.95</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://ampicked.com/hosting-by-use-case.html</loc>
+    <lastmod>2026-04-26</lastmod>
+    <priority>0.95</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://ampicked.com/hosting-migration-guide.html</loc>
+    <lastmod>2026-04-26</lastmod>
+    <priority>0.95</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <!-- Individual Hosting Reviews - Expanded Versions (High Priority) -->
   <url>
     <loc>https://ampicked.com/bluehost-review.html</loc>
-    <lastmod>2026-04-24</lastmod>
-    <priority>0.8</priority>
+    <lastmod>2026-04-26</lastmod>
+    <priority>0.9</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://ampicked.com/bluehost-review-expanded.html</loc>
+    <lastmod>2026-04-26</lastmod>
+    <priority>0.85</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://ampicked.com/siteground-review.html</loc>
-    <lastmod>2026-04-24</lastmod>
-    <priority>0.8</priority>
+    <lastmod>2026-04-26</lastmod>
+    <priority>0.9</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://ampicked.com/hostinger-review.html</loc>
-    <lastmod>2026-04-24</lastmod>
-    <priority>0.8</priority>
+    <lastmod>2026-04-26</lastmod>
+    <priority>0.9</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://ampicked.com/hostinger-review-expanded.html</loc>
+    <lastmod>2026-04-26</lastmod>
+    <priority>0.85</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://ampicked.com/hostgator-review.html</loc>
-    <lastmod>2026-04-24</lastmod>
-    <priority>0.8</priority>
+    <lastmod>2026-04-26</lastmod>
+    <priority>0.9</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://ampicked.com/hostgator-review-expanded.html</loc>
+    <lastmod>2026-04-26</lastmod>
+    <priority>0.85</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://ampicked.com/wpengine-review.html</loc>
-    <lastmod>2026-04-24</lastmod>
-    <priority>0.8</priority>
+    <lastmod>2026-04-26</lastmod>
+    <priority>0.9</priority>
     <changefreq>monthly</changefreq>
   </url>
 </urlset>

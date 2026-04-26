@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ampicked - Web Hosting Reviews & Comparisons</title>
     <meta name="description" content="Expert web hosting reviews and comparisons. Find the best hosting for your WordPress site, blog, or ecommerce store. Compare SiteGround, Bluehost, Hostinger, HostGator, and WP Engine.">
-    <meta name="keywords" content="web hosting, hosting reviews, WordPress hosting, best hosting providers">
+    <meta name="keywords" content="web hosting, hosting reviews, WordPress hosting, best hosting providers, affordable hosting, premium hosting">
     <meta name="author" content="Ampicked">
+
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-QKR6GF3W3X"></script>
     <script>
@@ -15,6 +16,7 @@
         gtag('js', new Date());
         gtag('config', 'G-QKR6GF3W3X');
     </script>
+
     <style>
         * {
             margin: 0;
@@ -38,19 +40,22 @@
         header {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
-            padding: 60px 20px;
+            padding: 80px 20px 60px;
             text-align: center;
         }
 
         header h1 {
-            font-size: 3em;
-            margin-bottom: 10px;
+            font-size: 3.5em;
+            margin-bottom: 15px;
             font-weight: 700;
+            letter-spacing: -1px;
         }
 
         header p {
-            font-size: 1.3em;
+            font-size: 1.2em;
             opacity: 0.95;
+            max-width: 600px;
+            margin: 0 auto;
         }
 
         main {
@@ -58,82 +63,154 @@
         }
 
         section {
-            margin-bottom: 60px;
+            margin-bottom: 80px;
         }
 
         h2 {
             color: #667eea;
-            font-size: 2em;
-            margin-bottom: 40px;
+            font-size: 2.5em;
+            margin-bottom: 50px;
             text-align: center;
+            font-weight: 600;
         }
 
-        .hosting-grid {
+        .pathway-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 30px;
-            margin-bottom: 40px;
+            margin-bottom: 60px;
         }
 
-        .hosting-card {
+        .pathway-card {
             background: white;
-            border-radius: 8px;
-            padding: 30px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            padding: 40px 30px;
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            border-top: 4px solid #667eea;
         }
 
-        .hosting-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+        .pathway-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 8px 25px rgba(102, 126, 234, 0.15);
         }
 
-        .hosting-card h3 {
-            color: #667eea;
-            font-size: 1.5em;
+        .pathway-icon {
+            font-size: 2.5em;
             margin-bottom: 15px;
+            text-align: center;
         }
 
-        .hosting-card p {
-            color: #666;
-            margin-bottom: 20px;
-            line-height: 1.8;
-        }
-
-        .read-review-link {
-            display: inline-block;
+        .pathway-card h3 {
             color: #667eea;
+            font-size: 1.6em;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        .pathway-card p {
+            color: #666;
+            margin-bottom: 25px;
+            line-height: 1.8;
+            flex-grow: 1;
+            text-align: center;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 12px 28px;
+            border-radius: 6px;
             text-decoration: none;
             font-weight: 600;
-            transition: color 0.3s ease;
-        }
-
-        .read-review-link:hover {
-            color: #764ba2;
-        }
-
-        .read-review-link::after {
-            content: ' →';
-        }
-
-        footer {
-            background: #333;
-            color: white;
-            padding: 40px 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
             text-align: center;
-            margin-top: 80px;
+            align-self: center;
+            border: none;
+            cursor: pointer;
+            font-size: 1em;
         }
 
-        footer p {
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 25px;
+            margin-top: 40px;
+        }
+
+        .feature-box {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            text-align: center;
+            border-left: 4px solid #764ba2;
+        }
+
+        .feature-box h4 {
+            color: #764ba2;
+            font-size: 1.3em;
             margin-bottom: 10px;
+        }
+
+        .feature-box p {
+            color: #666;
+            font-size: 0.95em;
+        }
+
+        .secondary-links {
+            background: #f5f7ff;
+            padding: 50px 20px;
+            border-radius: 10px;
+            margin-top: 40px;
+        }
+
+        .secondary-links h3 {
+            text-align: center;
+            color: #667eea;
+            margin-bottom: 30px;
+            font-size: 1.4em;
+        }
+
+        .review-links {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+        }
+
+        .review-link {
+            display: inline-block;
+            padding: 15px 20px;
+            background: white;
+            color: #667eea;
+            text-decoration: none;
+            border-radius: 6px;
+            border: 2px solid #667eea;
+            text-align: center;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .review-link:hover {
+            background: #667eea;
+            color: white;
+            transform: translateY(-2px);
         }
 
         .affiliate-notice {
             background: #f0f4ff;
             border-left: 4px solid #667eea;
-            padding: 20px;
-            margin: 30px 0;
-            border-radius: 4px;
+            padding: 25px;
+            margin: 40px 0;
+            border-radius: 6px;
             font-size: 0.95em;
             color: #555;
         }
@@ -142,17 +219,57 @@
             color: #667eea;
         }
 
+        footer {
+            background: #333;
+            color: white;
+            padding: 50px 20px 30px;
+            text-align: center;
+            margin-top: 100px;
+        }
+
+        footer p {
+            margin-bottom: 15px;
+            font-size: 0.95em;
+        }
+
+        footer a {
+            color: #667eea;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        footer a:hover {
+            color: #764ba2;
+        }
+
         @media (max-width: 768px) {
             header h1 {
-                font-size: 2em;
+                font-size: 2.2em;
             }
 
             header p {
                 font-size: 1em;
             }
 
-            .hosting-grid {
+            h2 {
+                font-size: 1.8em;
+                margin-bottom: 30px;
+            }
+
+            .pathway-grid {
                 grid-template-columns: 1fr;
+            }
+
+            .pathway-card {
+                padding: 30px 25px;
+            }
+
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .review-links {
+                grid-template-columns: repeat(2, 1fr);
             }
         }
     </style>
@@ -160,50 +277,106 @@
 <body>
     <header>
         <div class="container">
-            <h1>🏆 Ampicked - Web Hosting Reviews</h1>
-            <p>Compare web hosting providers: SiteGround, Bluehost, Hostinger, HostGator, and WP Engine</p>
+            <h1>🏆 Ampicked</h1>
+            <p>Expert web hosting reviews and comparisons to help you find the perfect host for your WordPress site, blog, or ecommerce store</p>
         </div>
     </header>
 
     <main>
         <div class="container">
+            <!-- AFFILIATE NOTICE -->
+            <div class="affiliate-notice">
+                <strong>Affiliate Disclosure:</strong> Ampicked uses affiliate links in our reviews. We earn a commission when you purchase through our links at no extra cost to you. We only recommend services we genuinely believe in.
+            </div>
+
+            <!-- MAIN PATHWAY SECTION -->
             <section>
-                <h2>Hosting Reviews</h2>
+                <h2>Find Your Perfect Web Host</h2>
+                <p style="text-align: center; font-size: 1.1em; color: #666; margin-bottom: 50px;">Choose a pathway that matches your needs</p>
 
-                <div class="affiliate-notice">
-                    <strong>Affiliate Disclosure:</strong> Ampicked uses affiliate links in our reviews. We earn a commission when you purchase through our links at no extra cost to you. We only recommend services we genuinely believe in.
+                <div class="pathway-grid">
+                    <!-- PATHWAY 1: BUDGET -->
+                    <div class="pathway-card">
+                        <div class="pathway-icon">💰</div>
+                        <h3>Budget Hosting</h3>
+                        <p>Find affordable hosting solutions perfect for startups, small blogs, and budget-conscious sites. Get great value without breaking the bank.</p>
+                        <a href="budget-hosting-comparison.html" class="cta-button">Compare Budget Hosts →</a>
+                    </div>
+
+                    <!-- PATHWAY 2: PREMIUM -->
+                    <div class="pathway-card">
+                        <div class="pathway-icon">⭐</div>
+                        <h3>Premium Hosting</h3>
+                        <p>Discover high-performance managed hosting designed for professional sites, agencies, and enterprises that demand excellence.</p>
+                        <a href="premium-hosting-comparison.html" class="cta-button">Compare Premium Hosts →</a>
+                    </div>
+
+                    <!-- PATHWAY 3: USE CASE -->
+                    <div class="pathway-card">
+                        <div class="pathway-icon">🎯</div>
+                        <h3>Hosting by Use Case</h3>
+                        <p>Find hosting specifically optimized for WordPress, ecommerce stores, blogs, or specific use cases that match your business.</p>
+                        <a href="hosting-by-use-case.html" class="cta-button">Find by Use Case →</a>
+                    </div>
+
+                    <!-- PATHWAY 4: MIGRATION -->
+                    <div class="pathway-card">
+                        <div class="pathway-icon">🚀</div>
+                        <h3>Migration Guide</h3>
+                        <p>Planning to switch hosting? Learn how to migrate your site safely, compare providers for your current setup, and minimize downtime.</p>
+                        <a href="hosting-migration-guide.html" class="cta-button">Migration Guides →</a>
+                    </div>
                 </div>
+            </section>
 
-                <div class="hosting-grid">
-                    <div class="hosting-card">
-                        <h3>SiteGround</h3>
-                        <p>Premium WordPress hosting with exceptional performance, security, and 24/7 customer support. Perfect for growing WordPress sites and professionals.</p>
-                        <a href="siteground-review.html" class="read-review-link">Read Review</a>
+            <!-- WHY AMPICKED SECTION -->
+            <section>
+                <h2>Why Choose Ampicked?</h2>
+
+                <div class="features-grid">
+                    <div class="feature-box">
+                        <h4>Expert Reviews</h4>
+                        <p>In-depth analysis of hosting providers based on real-world testing and user experiences.</p>
                     </div>
 
-                    <div class="hosting-card">
-                        <h3>Bluehost</h3>
-                        <p>Official WordPress recommended hosting with affordable plans, WordPress integration, and solid performance. Great for beginners and small businesses.</p>
-                        <a href="bluehost-review.html" class="read-review-link">Read Review</a>
+                    <div class="feature-box">
+                        <h4>Transparent Comparisons</h4>
+                        <p>Side-by-side hosting feature comparisons help you make informed decisions for your site.</p>
                     </div>
 
-                    <div class="hosting-card">
-                        <h3>Hostinger</h3>
-                        <p>Affordable hosting with excellent uptime, speed, and 24/7 support for WordPress sites. Offers great value for the price.</p>
-                        <a href="hostinger-review.html" class="read-review-link">Read Review</a>
+                    <div class="feature-box">
+                        <h4>Updated Content</h4>
+                        <p>We regularly update our hosting reviews to reflect the latest features, pricing, and performance.</p>
                     </div>
 
-                    <div class="hosting-card">
-                        <h3>HostGator</h3>
-                        <p>Budget-friendly hosting with good reliability, flexible plans, and solid hosting options. Good for shared hosting needs.</p>
-                        <a href="hostgator-review.html" class="read-review-link">Read Review</a>
+                    <div class="feature-box">
+                        <h4>No Bias</h4>
+                        <p>Our recommendations are based on merit and real user needs, not just affiliate commissions.</p>
                     </div>
 
-                    <div class="hosting-card">
-                        <h3>WP Engine</h3>
-                        <p>Premium managed WordPress hosting for high-performance enterprise sites. Includes advanced security, staging, and professional support.</p>
-                        <a href="wpengine-review.html" class="read-review-link">Read Review</a>
+                    <div class="feature-box">
+                        <h4>Actionable Guides</h4>
+                        <p>Migration guides and setup tutorials help you get started quickly with your new host.</p>
                     </div>
+
+                    <div class="feature-box">
+                        <h4>Budget-Friendly</h4>
+                        <p>We highlight the best value options so you don't overpay for hosting features you don't need.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- INDIVIDUAL REVIEWS SECTION -->
+            <section class="secondary-links">
+                <h3>Individual Web Host Reviews</h3>
+                <p style="text-align: center; color: #666; margin-bottom: 30px;">Deep dives into each hosting provider</p>
+
+                <div class="review-links">
+                    <a href="siteground-review.html" class="review-link">🔍 SiteGround</a>
+                    <a href="bluehost-review.html" class="review-link">🔍 Bluehost</a>
+                    <a href="hostinger-review.html" class="review-link">🔍 Hostinger</a>
+                    <a href="hostgator-review.html" class="review-link">🔍 HostGator</a>
+                    <a href="wpengine-review.html" class="review-link">🔍 WP Engine</a>
                 </div>
             </section>
         </div>
@@ -211,7 +384,8 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2026 Ampicked. All rights reserved. | <a href="#" style="color: #667eea; text-decoration: none;">Privacy Policy</a> | <a href="#" style="color: #667eea; text-decoration: none;">Contact</a></p>
+            <p>&copy; 2026 Ampicked. All rights reserved.</p>
+            <p><a href="#">Privacy Policy</a> | <a href="#">Contact</a> | <a href="sitemap.xml">Sitemap</a></p>
         </div>
     </footer>
 </body>
