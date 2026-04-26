@@ -3,10 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ampicked - Web Hosting Reviews & Comparisons</title>
-    <meta name="description" content="Expert web hosting reviews and comparisons. Find the best hosting for your WordPress site, blog, or ecommerce store. Compare SiteGround, Bluehost, Hostinger, HostGator, and WP Engine.">
-    <meta name="keywords" content="web hosting, hosting reviews, WordPress hosting, best hosting providers, affordable hosting, premium hosting">
-    <meta name="author" content="Ampicked">
+    <title>Ampicked - Find Your Perfect Web Hosting in 30 Seconds</title>
+    <meta name="description" content="Smart hosting quiz matches you to the best provider in 30 seconds. Compare SiteGround, Bluehost, Hostinger, HostGator, and WP Engine based on your real needs.">
 
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-QKR6GF3W3X"></script>
@@ -25,368 +23,732 @@
         }
 
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
             line-height: 1.6;
-            color: #333;
-            background-color: #f8f9fa;
+            color: #1a1a1a;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+            padding: 20px;
         }
 
         .container {
-            max-width: 1200px;
+            max-width: 900px;
             margin: 0 auto;
-            padding: 0 20px;
         }
 
         header {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 80px 20px 60px;
             text-align: center;
+            margin-bottom: 60px;
+            padding: 40px 20px 0;
         }
 
-        header h1 {
+        .logo {
             font-size: 3.5em;
             margin-bottom: 15px;
+        }
+
+        h1 {
+            font-size: 2.8em;
             font-weight: 700;
-            letter-spacing: -1px;
-        }
-
-        header p {
-            font-size: 1.2em;
-            opacity: 0.95;
-            max-width: 600px;
-            margin: 0 auto;
-        }
-
-        main {
-            padding: 60px 0;
-        }
-
-        section {
-            margin-bottom: 80px;
-        }
-
-        h2 {
-            color: #667eea;
-            font-size: 2.5em;
-            margin-bottom: 50px;
-            text-align: center;
-            font-weight: 600;
-        }
-
-        .pathway-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 30px;
-            margin-bottom: 60px;
-        }
-
-        .pathway-card {
-            background: white;
-            border-radius: 10px;
-            padding: 40px 30px;
-            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            display: flex;
-            flex-direction: column;
-            border-top: 4px solid #667eea;
-        }
-
-        .pathway-card:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 8px 25px rgba(102, 126, 234, 0.15);
-        }
-
-        .pathway-icon {
-            font-size: 2.5em;
-            margin-bottom: 15px;
-            text-align: center;
-        }
-
-        .pathway-card h3 {
-            color: #667eea;
-            font-size: 1.6em;
-            margin-bottom: 15px;
-            text-align: center;
-        }
-
-        .pathway-card p {
-            color: #666;
-            margin-bottom: 25px;
-            line-height: 1.8;
-            flex-grow: 1;
-            text-align: center;
-        }
-
-        .cta-button {
-            display: inline-block;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 12px 28px;
-            border-radius: 6px;
-            text-decoration: none;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 10px;
+            line-height: 1.2;
+        }
+
+        .tagline {
+            font-size: 1.2em;
+            color: #555;
+            max-width: 600px;
+            margin: 0 auto 15px;
+            font-weight: 300;
+        }
+
+        .badge {
+            display: inline-block;
+            background: rgba(102, 126, 234, 0.1);
+            color: #667eea;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.9em;
             font-weight: 600;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            text-align: center;
-            align-self: center;
-            border: none;
-            cursor: pointer;
-            font-size: 1em;
+            margin-bottom: 40px;
         }
 
-        .cta-button:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
-        }
-
-        .features-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 25px;
-            margin-top: 40px;
-        }
-
-        .feature-box {
+        .quiz-container {
             background: white;
-            padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-            text-align: center;
-            border-left: 4px solid #764ba2;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            animation: slideUp 0.6s ease;
         }
 
-        .feature-box h4 {
-            color: #764ba2;
-            font-size: 1.3em;
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .progress-bar {
+            height: 6px;
+            background: #e0e0e0;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+            width: 0%;
+            transition: width 0.3s ease;
+        }
+
+        .quiz-content {
+            padding: 50px 40px;
+        }
+
+        .question-number {
+            color: #667eea;
+            font-size: 0.9em;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
             margin-bottom: 10px;
         }
 
-        .feature-box p {
-            color: #666;
-            font-size: 0.95em;
-        }
-
-        .secondary-links {
-            background: #f5f7ff;
-            padding: 50px 20px;
-            border-radius: 10px;
-            margin-top: 40px;
-        }
-
-        .secondary-links h3 {
-            text-align: center;
-            color: #667eea;
+        .question {
+            font-size: 1.8em;
+            font-weight: 600;
+            color: #1a1a1a;
             margin-bottom: 30px;
-            font-size: 1.4em;
+            line-height: 1.3;
         }
 
-        .review-links {
+        .options {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            gap: 20px;
+            grid-template-columns: 1fr;
+            gap: 15px;
+            margin-bottom: 40px;
         }
 
-        .review-link {
-            display: inline-block;
-            padding: 15px 20px;
-            background: white;
-            color: #667eea;
-            text-decoration: none;
-            border-radius: 6px;
-            border: 2px solid #667eea;
-            text-align: center;
+        .option {
+            display: flex;
+            align-items: center;
+            padding: 18px 22px;
+            border: 2px solid #e0e0e0;
+            border-radius: 12px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            background: #f9f9f9;
+        }
+
+        .option:hover {
+            border-color: #667eea;
+            background: #f5f7ff;
+            transform: translateX(5px);
+        }
+
+        .option input[type="radio"] {
+            margin-right: 15px;
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+            accent-color: #667eea;
+        }
+
+        .option label {
+            cursor: pointer;
+            flex: 1;
             font-weight: 500;
+            font-size: 1.05em;
+        }
+
+        .option input[type="radio"]:checked + label {
+            color: #667eea;
+            font-weight: 700;
+        }
+
+        .option.selected {
+            border-color: #667eea;
+            background: linear-gradient(135deg, #f5f7ff 0%, #e8ebff 100%);
+        }
+
+        .buttons {
+            display: flex;
+            gap: 15px;
+            justify-content: space-between;
+        }
+
+        button {
+            padding: 14px 32px;
+            border: none;
+            border-radius: 10px;
+            font-size: 1em;
+            font-weight: 600;
+            cursor: pointer;
             transition: all 0.3s ease;
         }
 
-        .review-link:hover {
+        .btn-secondary {
+            background: #e0e0e0;
+            color: #333;
+        }
+
+        .btn-secondary:hover {
+            background: #d0d0d0;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            flex: 1;
+            box-shadow: 0 10px 25px rgba(102, 126, 234, 0.3);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 15px 35px rgba(102, 126, 234, 0.4);
+        }
+
+        .btn-primary:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        .results-container {
+            display: none;
+        }
+
+        .results-container.active {
+            display: block;
+            animation: slideUp 0.6s ease;
+        }
+
+        .results-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .results-title {
+            font-size: 2.2em;
+            font-weight: 700;
+            color: #1a1a1a;
+            margin-bottom: 10px;
+        }
+
+        .results-subtitle {
+            font-size: 1.1em;
+            color: #666;
+        }
+
+        .recommended-hosts {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin-bottom: 50px;
+        }
+
+        .host-card {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            border: 2px solid transparent;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .host-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.12);
+            border-color: #667eea;
+        }
+
+        .host-card.featured {
+            border: 2px solid #667eea;
+            transform: scale(1.02);
+        }
+
+        .host-badge {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 0.8em;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        .host-name {
+            font-size: 1.8em;
+            font-weight: 700;
+            color: #1a1a1a;
+            margin-bottom: 10px;
+            margin-top: 20px;
+        }
+
+        .host-rating {
+            color: #ffc107;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+
+        .host-price {
+            font-size: 1.4em;
+            color: #667eea;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+
+        .host-price span {
+            font-size: 0.8em;
+            color: #999;
+        }
+
+        .host-description {
+            color: #666;
+            margin-bottom: 20px;
+            line-height: 1.7;
+            font-size: 0.95em;
+        }
+
+        .host-features {
+            list-style: none;
+            margin-bottom: 25px;
+        }
+
+        .host-features li {
+            padding: 8px 0;
+            color: #555;
+            border-bottom: 1px solid #f0f0f0;
+            font-size: 0.95em;
+        }
+
+        .host-features li:before {
+            content: "✓ ";
+            color: #4caf50;
+            font-weight: 700;
+            margin-right: 8px;
+        }
+
+        .host-cta {
+            display: block;
+            width: 100%;
+            padding: 14px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: 700;
+            transition: all 0.3s ease;
+            margin-bottom: 10px;
+        }
+
+        .host-cta:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(102, 126, 234, 0.3);
+        }
+
+        .learn-more {
+            display: block;
+            width: 100%;
+            padding: 12px;
+            background: #f5f5f5;
+            color: #667eea;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: 2px solid #e0e0e0;
+        }
+
+        .learn-more:hover {
+            background: #f0f0f0;
+            border-color: #667eea;
+        }
+
+        .secondary-links {
+            background: white;
+            border-radius: 15px;
+            padding: 40px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            text-align: center;
+        }
+
+        .secondary-title {
+            font-size: 1.6em;
+            font-weight: 700;
+            color: #1a1a1a;
+            margin-bottom: 10px;
+        }
+
+        .secondary-subtitle {
+            color: #666;
+            margin-bottom: 30px;
+        }
+
+        .secondary-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+        }
+
+        .secondary-link {
+            display: inline-block;
+            padding: 14px 20px;
+            background: #f5f5f5;
+            color: #667eea;
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: 2px solid #e0e0e0;
+        }
+
+        .secondary-link:hover {
             background: #667eea;
             color: white;
+            border-color: #667eea;
             transform: translateY(-2px);
         }
 
+        footer {
+            text-align: center;
+            padding: 40px 20px 20px;
+            color: #999;
+            font-size: 0.9em;
+        }
+
         .affiliate-notice {
-            background: #f0f4ff;
+            background: rgba(102, 126, 234, 0.1);
             border-left: 4px solid #667eea;
-            padding: 25px;
+            padding: 20px;
+            border-radius: 8px;
             margin: 40px 0;
-            border-radius: 6px;
             font-size: 0.95em;
             color: #555;
         }
 
-        .affiliate-notice strong {
-            color: #667eea;
-        }
-
-        footer {
-            background: #333;
-            color: white;
-            padding: 50px 20px 30px;
-            text-align: center;
-            margin-top: 100px;
-        }
-
-        footer p {
-            margin-bottom: 15px;
-            font-size: 0.95em;
-        }
-
-        footer a {
-            color: #667eea;
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
-
-        footer a:hover {
-            color: #764ba2;
-        }
-
         @media (max-width: 768px) {
-            header h1 {
-                font-size: 2.2em;
+            h1 {
+                font-size: 2em;
             }
 
-            header p {
-                font-size: 1em;
+            .question {
+                font-size: 1.4em;
             }
 
-            h2 {
-                font-size: 1.8em;
-                margin-bottom: 30px;
+            .quiz-content {
+                padding: 30px 20px;
             }
 
-            .pathway-grid {
+            .recommended-hosts {
                 grid-template-columns: 1fr;
             }
 
-            .pathway-card {
-                padding: 30px 25px;
+            .host-card.featured {
+                transform: scale(1);
             }
 
-            .features-grid {
-                grid-template-columns: 1fr;
+            .buttons {
+                flex-direction: column;
             }
 
-            .review-links {
-                grid-template-columns: repeat(2, 1fr);
+            .btn-secondary {
+                display: none;
             }
         }
     </style>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>🏆 Ampicked</h1>
-            <p>Expert web hosting reviews and comparisons to help you find the perfect host for your WordPress site, blog, or ecommerce store</p>
-        </div>
-    </header>
+    <div class="container">
+        <header>
+            <div class="logo">🏆</div>
+            <h1>Find Your Perfect Web Host</h1>
+            <p class="tagline">Smart quiz matches you to the best provider in 30 seconds</p>
+            <div class="badge">⚡ Personalized Recommendations</div>
+        </header>
 
-    <main>
-        <div class="container">
-            <!-- AFFILIATE NOTICE -->
-            <div class="affiliate-notice">
-                <strong>Affiliate Disclosure:</strong> Ampicked uses affiliate links in our reviews. We earn a commission when you purchase through our links at no extra cost to you. We only recommend services we genuinely believe in.
+        <div class="quiz-container">
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressFill"></div>
             </div>
 
-            <!-- MAIN PATHWAY SECTION -->
-            <section>
-                <h2>Find Your Perfect Web Host</h2>
-                <p style="text-align: center; font-size: 1.1em; color: #666; margin-bottom: 50px;">Choose a pathway that matches your needs</p>
-
-                <div class="pathway-grid">
-                    <!-- PATHWAY 1: BUDGET -->
-                    <div class="pathway-card">
-                        <div class="pathway-icon">💰</div>
-                        <h3>Budget Hosting</h3>
-                        <p>Find affordable hosting solutions perfect for startups, small blogs, and budget-conscious sites. Get great value without breaking the bank.</p>
-                        <a href="budget-hosting-comparison.html" class="cta-button">Compare Budget Hosts →</a>
-                    </div>
-
-                    <!-- PATHWAY 2: PREMIUM -->
-                    <div class="pathway-card">
-                        <div class="pathway-icon">⭐</div>
-                        <h3>Premium Hosting</h3>
-                        <p>Discover high-performance managed hosting designed for professional sites, agencies, and enterprises that demand excellence.</p>
-                        <a href="premium-hosting-comparison.html" class="cta-button">Compare Premium Hosts →</a>
-                    </div>
-
-                    <!-- PATHWAY 3: USE CASE -->
-                    <div class="pathway-card">
-                        <div class="pathway-icon">🎯</div>
-                        <h3>Hosting by Use Case</h3>
-                        <p>Find hosting specifically optimized for WordPress, ecommerce stores, blogs, or specific use cases that match your business.</p>
-                        <a href="hosting-by-use-case.html" class="cta-button">Find by Use Case →</a>
-                    </div>
-
-                    <!-- PATHWAY 4: MIGRATION -->
-                    <div class="pathway-card">
-                        <div class="pathway-icon">🚀</div>
-                        <h3>Migration Guide</h3>
-                        <p>Planning to switch hosting? Learn how to migrate your site safely, compare providers for your current setup, and minimize downtime.</p>
-                        <a href="hosting-migration-guide.html" class="cta-button">Migration Guides →</a>
+            <div class="quiz-content">
+                <!-- Quiz Section -->
+                <div id="quizSection">
+                    <div class="question-number" id="questionNumber">Question 1 of 4</div>
+                    <div class="question" id="question"></div>
+                    <div class="options" id="options"></div>
+                    <div class="buttons">
+                        <button class="btn-secondary" id="prevBtn" onclick="previousQuestion()" style="display: none;">← Back</button>
+                        <button class="btn-primary" id="nextBtn" onclick="nextQuestion()" disabled>Next →</button>
                     </div>
                 </div>
-            </section>
 
-            <!-- WHY AMPICKED SECTION -->
-            <section>
-                <h2>Why Choose Ampicked?</h2>
-
-                <div class="features-grid">
-                    <div class="feature-box">
-                        <h4>Expert Reviews</h4>
-                        <p>In-depth analysis of hosting providers based on real-world testing and user experiences.</p>
+                <!-- Results Section -->
+                <div class="results-container" id="resultsSection">
+                    <div class="results-header">
+                        <div class="results-title">Your Perfect Match</div>
+                        <div class="results-subtitle" id="resultsSubtitle"></div>
                     </div>
-
-                    <div class="feature-box">
-                        <h4>Transparent Comparisons</h4>
-                        <p>Side-by-side hosting feature comparisons help you make informed decisions for your site.</p>
+                    <div class="recommended-hosts" id="recommendedHosts"></div>
+                    <div class="secondary-links">
+                        <div class="secondary-title">Want More Options?</div>
+                        <div class="secondary-subtitle">Explore our full hosting comparisons</div>
+                        <div class="secondary-grid">
+                            <a href="budget-hosting-comparison.html" class="secondary-link">💰 Budget</a>
+                            <a href="premium-hosting-comparison.html" class="secondary-link">⭐ Premium</a>
+                            <a href="hosting-by-use-case.html" class="secondary-link">🎯 By Use Case</a>
+                            <a href="hosting-migration-guide.html" class="secondary-link">🔄 Migration</a>
+                        </div>
                     </div>
-
-                    <div class="feature-box">
-                        <h4>Updated Content</h4>
-                        <p>We regularly update our hosting reviews to reflect the latest features, pricing, and performance.</p>
-                    </div>
-
-                    <div class="feature-box">
-                        <h4>No Bias</h4>
-                        <p>Our recommendations are based on merit and real user needs, not just affiliate commissions.</p>
-                    </div>
-
-                    <div class="feature-box">
-                        <h4>Actionable Guides</h4>
-                        <p>Migration guides and setup tutorials help you get started quickly with your new host.</p>
-                    </div>
-
-                    <div class="feature-box">
-                        <h4>Budget-Friendly</h4>
-                        <p>We highlight the best value options so you don't overpay for hosting features you don't need.</p>
-                    </div>
+                    <button class="btn-primary" onclick="resetQuiz()" style="width: 100%; margin-top: 40px; padding: 14px;">Take Quiz Again</button>
                 </div>
-            </section>
-
-            <!-- INDIVIDUAL REVIEWS SECTION -->
-            <section class="secondary-links">
-                <h3>Individual Web Host Reviews</h3>
-                <p style="text-align: center; color: #666; margin-bottom: 30px;">Deep dives into each hosting provider</p>
-
-                <div class="review-links">
-                    <a href="siteground-review.html" class="review-link">🔍 SiteGround</a>
-                    <a href="bluehost-review.html" class="review-link">🔍 Bluehost</a>
-                    <a href="hostinger-review.html" class="review-link">🔍 Hostinger</a>
-                    <a href="hostgator-review.html" class="review-link">🔍 HostGator</a>
-                    <a href="wpengine-review.html" class="review-link">🔍 WP Engine</a>
-                </div>
-            </section>
+            </div>
         </div>
-    </main>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2026 Ampicked. All rights reserved.</p>
-            <p><a href="#">Privacy Policy</a> | <a href="#">Contact</a> | <a href="sitemap.xml">Sitemap</a></p>
+        <div class="affiliate-notice">
+            <strong>💡 Affiliate Disclosure:</strong> Ampicked earns a commission from hosting purchases at no extra cost to you. We only recommend services we genuinely believe in.
         </div>
-    </footer>
+
+        <footer>
+            <p>&copy; 2026 Ampicked. All rights reserved. | <a href="#" style="color: #667eea; text-decoration: none;">Privacy Policy</a></p>
+        </footer>
+    </div>
+
+    <script>
+        const quizData = [
+            {
+                question: "What's your primary budget range?",
+                options: [
+                    { text: "Ultra-budget ($2-4/month)", value: "budget" },
+                    { text: "Affordable ($4-8/month)", value: "affordable" },
+                    { text: "Mid-range ($8-20/month)", value: "midrange" },
+                    { text: "Premium ($20+/month)", value: "premium" }
+                ]
+            },
+            {
+                question: "What type of website are you building?",
+                options: [
+                    { text: "Blog or personal site", value: "blog" },
+                    { text: "Small business site", value: "business" },
+                    { text: "E-commerce store", value: "ecommerce" },
+                    { text: "Agency or large site", value: "agency" }
+                ]
+            },
+            {
+                question: "How important is WordPress compatibility?",
+                options: [
+                    { text: "Essential - I want WordPress optimized", value: "wordpress-essential" },
+                    { text: "Important - but not required", value: "wordpress-important" },
+                    { text: "Not really - using something else", value: "wordpress-no" }
+                ]
+            },
+            {
+                question: "What matters most to you?",
+                options: [
+                    { text: "Lowest possible price", value: "price" },
+                    { text: "Best performance & speed", value: "performance" },
+                    { text: "Excellent customer support", value: "support" },
+                    { text: "All-around reliability", value: "reliability" }
+                ]
+            }
+        ];
+
+        const hostData = {
+            hostinger: {
+                name: "Hostinger",
+                rating: "4.7/5 ⭐",
+                price: "$2.99-12.99",
+                priceSpan: "/mo",
+                description: "Best budget WordPress hosting with excellent value and modern features",
+                features: ["Free domain", "Unlimited bandwidth", "AI-powered website builder", "Daily backups"],
+                url: "https://www.hostinger.com",
+                review: "hostinger-review.html",
+                badge: "Best Value"
+            },
+            bluehost: {
+                name: "Bluehost",
+                rating: "4.1/5 ⭐",
+                price: "$2.95-13.95",
+                priceSpan: "/mo",
+                description: "Official WordPress.org recommended hosting for beginners",
+                features: ["WordPress optimized", "Free domain first year", "24/7 support", "Money-back guarantee"],
+                url: "https://www.bluehost.com",
+                review: "bluehost-review.html",
+                badge: "WordPress Official"
+            },
+            siteground: {
+                name: "SiteGround",
+                rating: "4.9/5 ⭐",
+                price: "$2.99-7.99",
+                priceSpan: "/mo",
+                description: "Premium performance with exceptional support and modern tech",
+                features: ["Ultra-fast servers", "Free SSL", "Superior support", "Easy WordPress install"],
+                url: "https://www.siteground.com",
+                review: "siteground-review.html",
+                badge: "Top Performer"
+            },
+            hostgator: {
+                name: "HostGator",
+                rating: "4.2/5 ⭐",
+                price: "$2.75-5.95",
+                priceSpan: "/mo",
+                description: "Affordable hosting with reliable uptime and decent support",
+                features: ["45-day money-back", "24/7 support", "Free website builder", "Unmetered bandwidth"],
+                url: "https://www.hostgator.com",
+                review: "hostgator-review.html",
+                badge: "Budget Option"
+            },
+            wpengine: {
+                name: "WP Engine",
+                rating: "4.8/5 ⭐",
+                price: "$20-115",
+                priceSpan: "/mo",
+                description: "Premium managed WordPress hosting for professionals",
+                features: ["Blazing fast performance", "Expert support", "Free SSL & CDN", "Automatic updates"],
+                url: "https://wpengine.com",
+                review: "wpengine-review.html",
+                badge: "Premium"
+            }
+        };
+
+        let currentQuestion = 0;
+        let answers = {};
+
+        function displayQuestion() {
+            const q = quizData[currentQuestion];
+            document.getElementById("question").textContent = q.question;
+            document.getElementById("questionNumber").textContent = `Question ${currentQuestion + 1} of ${quizData.length}`;
+
+            const optionsHtml = q.options.map((opt, idx) => `
+                <div class="option">
+                    <input type="radio" name="option" value="${opt.value}" id="opt${idx}" onchange="updateSelection()">
+                    <label for="opt${idx}">${opt.text}</label>
+                </div>
+            `).join("");
+
+            document.getElementById("options").innerHTML = optionsHtml;
+            document.getElementById("prevBtn").style.display = currentQuestion > 0 ? "block" : "none";
+            updateProgress();
+            document.getElementById("nextBtn").disabled = !answers[currentQuestion];
+        }
+
+        function updateSelection() {
+            const selected = document.querySelector('input[name="option"]:checked');
+            if (selected) {
+                answers[currentQuestion] = selected.value;
+                document.getElementById("nextBtn").disabled = false;
+                document.querySelectorAll(".option").forEach(opt => opt.classList.remove("selected"));
+                selected.closest(".option").classList.add("selected");
+            }
+        }
+
+        function nextQuestion() {
+            if (currentQuestion < quizData.length - 1) {
+                currentQuestion++;
+                displayQuestion();
+            } else {
+                showResults();
+            }
+        }
+
+        function previousQuestion() {
+            if (currentQuestion > 0) {
+                currentQuestion--;
+                displayQuestion();
+            }
+        }
+
+        function updateProgress() {
+            const progress = ((currentQuestion + 1) / quizData.length) * 100;
+            document.getElementById("progressFill").style.width = progress + "%";
+        }
+
+        function getRecommendations() {
+            const budget = answers[0];
+            const siteType = answers[1];
+            const wpImportant = answers[2];
+            const priority = answers[3];
+
+            let recommendations = [];
+
+            if (budget === "budget" || budget === "affordable") {
+                recommendations.push("hostinger");
+                recommendations.push("bluehost");
+                recommendations.push("hostgator");
+            } else if (budget === "midrange") {
+                recommendations.push("siteground");
+                recommendations.push("bluehost");
+                recommendations.push("hostinger");
+            } else {
+                recommendations.push("wpengine");
+                recommendations.push("siteground");
+                recommendations.push("bluehost");
+            }
+
+            if (wpImportant === "wordpress-essential") {
+                recommendations.unshift("bluehost");
+            }
+
+            if (priority === "performance") {
+                recommendations.unshift("siteground");
+            }
+
+            return [...new Set(recommendations)].slice(0, 3);
+        }
+
+        function showResults() {
+            document.getElementById("quizSection").style.display = "none";
+            document.getElementById("resultsSection").classList.add("active");
+
+            const recs = getRecommendations();
+            document.getElementById("resultsSubtitle").textContent = `Based on your answers, here are your top ${recs.length} picks:`;
+
+            const hostsHtml = recs.map((hostKey, idx) => {
+                const host = hostData[hostKey];
+                const featured = idx === 0 ? "featured" : "";
+                return `
+                    <div class="host-card ${featured}">
+                        <div class="host-badge">${host.badge}</div>
+                        <div class="host-name">${host.name}</div>
+                        <div class="host-rating">${host.rating}</div>
+                        <div class="host-price">$${host.price}<span>${host.priceSpan}</span></div>
+                        <div class="host-description">${host.description}</div>
+                        <ul class="host-features">
+                            ${host.features.map(f => `<li>${f}</li>`).join("")}
+                        </ul>
+                        <a href="${host.url}" class="host-cta" target="_blank">Get Started →</a>
+                        <a href="${host.review}" class="learn-more">Read Full Review</a>
+                    </div>
+                `;
+            }).join("");
+
+            document.getElementById("recommendedHosts").innerHTML = hostsHtml;
+        }
+
+        function resetQuiz() {
+            currentQuestion = 0;
+            answers = {};
+            document.getElementById("quizSection").style.display = "block";
+            document.getElementById("resultsSection").classList.remove("active");
+            displayQuestion();
+        }
+
+        // Initialize quiz
+        displayQuestion();
+    </script>
 </body>
 </html>
