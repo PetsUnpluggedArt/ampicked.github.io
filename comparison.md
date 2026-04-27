@@ -235,6 +235,23 @@ permalink: /comparison/
 </style>
 
 <script>
+// Map provider names to their individual info pages
+const providerLinks = {
+  'Bluehost': '/providers/bluehost/',
+  'Hostinger': '/providers/hostinger/',
+  'SiteGround': '/providers/siteground/',
+  'Bluehost Pro': '/providers/bluehost-pro/',
+  'Kinsta': '/providers/kinsta/',
+  'WP Engine': '/providers/wp-engine/',
+  'Pressable': '/providers/pressable/',
+  'DigitalOcean': '/providers/digitalocean/',
+  'Linode': '/providers/linode/'
+};
+
+function getProviderLink(providerName) {
+  return providerLinks[providerName] || '/comparison/';
+}
+
 const providers = [
   {
     name: 'Bluehost',
@@ -419,7 +436,7 @@ function renderComparison(filteredProviders) {
   filteredProviders.forEach(p => {
     const providerId = p.name.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '');
     html += `
-      <a href="/choose-hosting/#${p.name.toLowerCase().replace(/\s+/g, '-')}" style="text-decoration: none; color: inherit; display: flex; flex-direction: column; height: 100%;">
+      <a href="${getProviderLink(p.name)}" style="text-decoration: none; color: inherit; display: flex; flex-direction: column; height: 100%;">
         <div class="provider-card" id="${providerId}" style="cursor: pointer; flex-grow: 1;">
           <h3>${p.name}</h3>
           <span class="card-tier">${p.tier}</span>
