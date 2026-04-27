@@ -10,7 +10,8 @@ permalink: /blog/
 
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 25px; margin: 30px 0;">
 
-{% for post in site.posts limit: 6 %}
+{% for post in site.posts %}
+  {% if post.layout == 'post' %}
   <a href="{{ post.url }}" style="text-decoration: none; color: inherit;">
     <div style="background: white; border: 1px solid #ddd; border-radius: 8px; padding: 25px; transition: box-shadow 0.3s, transform 0.3s; cursor: pointer;" onmouseover="this.style.boxShadow='0 4px 12px rgba(0,0,0,0.1)'; this.style.transform='translateY(-4px)'" onmouseout="this.style.boxShadow='none'; this.style.transform='none'">
       <div style="color: #0066cc; font-size: 12px; font-weight: bold;">ARTICLE</div>
@@ -20,6 +21,7 @@ permalink: /blog/
       <div style="color: #0066cc; font-weight: bold; font-size: 14px;">Read Article →</div>
     </div>
   </a>
+  {% endif %}
 {% endfor %}
 
 </div>
@@ -30,7 +32,8 @@ permalink: /blog/
 
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 25px; margin: 30px 0;">
 
-{% for review in site.comparisons limit: 9 %}
+{% for review in site.comparisons %}
+  {% if review.layout == 'comparison' %}
   <a href="{{ review.url }}" style="text-decoration: none; color: inherit;">
     <div style="background: white; border: 1px solid #ddd; border-radius: 8px; padding: 25px; transition: box-shadow 0.3s, transform 0.3s; cursor: pointer;" onmouseover="this.style.boxShadow='0 4px 12px rgba(0,0,0,0.1)'; this.style.transform='translateY(-4px)'" onmouseout="this.style.boxShadow='none'; this.style.transform='none'">
       <div style="color: #f5576c; font-size: 12px; font-weight: bold;">PROVIDER REVIEW</div>
@@ -40,6 +43,7 @@ permalink: /blog/
       <div style="color: #f5576c; font-weight: bold; font-size: 14px;">View Review →</div>
     </div>
   </a>
+  {% endif %}
 {% endfor %}
 
 </div>
