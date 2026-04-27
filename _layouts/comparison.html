@@ -4,6 +4,21 @@ layout: default
 
 <div style="padding: 60px 20px;">
     <div style="max-width: 1200px; margin: 0 auto;">
-        {{ content }}
+        <header style="margin-bottom: 50px; text-align: center;">
+            <h1 style="color: #333; font-size: 2.5em; margin-bottom: 15px;">{{ page.title }}</h1>
+            <p style="font-size: 1.1em; color: #666; margin: 0;">{{ page.description }}</p>
+        </header>
+
+        <div>
+            {{ content }}
+        </div>
+
+        <section style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); color: white; padding: 50px; border-radius: 8px; margin-top: 60px; text-align: center;">
+            <h3 style="margin-bottom: 15px; font-size: 1.4em;">Ready to Make a Decision?</h3>
+            <p style="margin-bottom: 25px; font-size: 1.05em; line-height: 1.6; opacity: 0.95;">
+                Not sure which provider is right for you? Take our quiz for a personalized recommendation.
+            </p>
+            <a href="/quiz/" style="display: inline-block; background: white; color: #f5576c; padding: 14px 30px; border-radius: 5px; text-decoration: none; font-weight: 600;">Take the Quiz</a>
+        </section>
     </div>
 </div>
