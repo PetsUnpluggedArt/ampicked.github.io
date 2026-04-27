@@ -1,13 +1,10 @@
 ---
-layout: default
+layout: guide
 title: How to Choose the Right Web Host for Your Business in 2026
 description: A complete 2026 guide to selecting the perfect hosting provider. Covers shared, managed WordPress, cloud, and VPS options with provider recommendations.
 keywords: how to choose web hosting, hosting guide 2026, shared vs managed hosting, VPS hosting
 permalink: /choose-hosting/
 ---
-
-<div style="padding: 60px 20px;">
-<div style="max-width: 900px; margin: 0 auto;">
 
 ## The Hosting Confusion Problem
 
@@ -223,7 +220,4 @@ Now that you understand hosting types and what to look for, here are three ways 
     <p style="margin: 15px 0; opacity: 0.95;">See the real cost of cheap hosting. Not just monthly fees—hidden costs too.</p>
     <a href="/calculator/" style="display: inline-block; padding: 12px 24px; background: white; color: #00f2fe; text-decoration: none; border-radius: 4px; font-weight: 600; margin-top: 15px;">Calculate ROI →</a>
   </div>
-</div>
-
-</div>
 </div>

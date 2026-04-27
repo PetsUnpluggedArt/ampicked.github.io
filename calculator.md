@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: calculator
 title: Hosting ROI Calculator - See Your Savings
 description: Calculate how much poor hosting is costing you. Real numbers on downtime, performance, and revenue impact.
 keywords: hosting ROI, hosting cost calculator, downtime cost, hosting savings

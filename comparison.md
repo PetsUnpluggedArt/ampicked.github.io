@@ -1,13 +1,12 @@
 ---
-layout: default
+layout: comparison
 title: Hosting Provider Comparison - Side-by-Side
 description: Compare WordPress hosting providers side-by-side. Filter by price, features, and use case.
 keywords: hosting comparison, WordPress hosting comparison, hosting providers, best hosting
 permalink: /comparison/
 ---
 
-<div style="padding: 60px 20px;">
-<div id="comparison-tool" style="max-width: 1200px; margin: 0 auto;">
+<div id="comparison-tool">
   
   <!-- Header -->
   <div style="text-align: center; margin-bottom: 50px;">
@@ -509,4 +508,3 @@ document.addEventListener('DOMContentLoaded', () => {
   renderComparison(providers);
 });
 </script>
-</div>
