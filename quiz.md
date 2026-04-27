@@ -6,10 +6,10 @@ keywords: hosting quiz, find hosting, hosting recommendation, WordPress hosting 
 permalink: /quiz/
 ---
 
-## Find Your Perfect WordPress Host
-
 <div style="padding: 60px 20px;">
 <div id="quiz-container" style="max-width: 700px; margin: 0 auto;">
+
+## Find Your Perfect WordPress Host
   
   <!-- Progress Bar -->
   <div id="progress-bar" style="margin-bottom: 40px;">
@@ -418,26 +418,25 @@ const quizData = {
 let currentAnswers = {};
 let currentQuestion = 0;
 
-// Map provider names to their comparison page anchors
+// Map provider names to their individual info pages
 const providerLinks = {
-  'Bluehost': 'bluehost',
-  'Hostinger': 'hostinger',
-  'Hostinger WordPress': 'hostinger',
-  'SiteGround': 'siteground',
-  'Bluehost Pro': 'bluehost-pro',
-  'Kinsta': 'kinsta',
-  'Kinsta Cloud': 'kinsta',
-  'WP Engine': 'wp-engine',
-  'Pressable': 'pressable',
-  'DigitalOcean': 'digitalocean',
-  'Linode': 'linode',
-  'AWS / Google Cloud / Azure': null,
-  'Dedicated Server': null
+  'Bluehost': '/providers/bluehost/',
+  'Hostinger': '/providers/hostinger/',
+  'Hostinger WordPress': '/providers/hostinger/',
+  'SiteGround': '/providers/siteground/',
+  'Bluehost Pro': '/providers/bluehost-pro/',
+  'Kinsta': '/providers/kinsta/',
+  'Kinsta Cloud': '/providers/kinsta/',
+  'WP Engine': '/providers/wp-engine/',
+  'Pressable': '/providers/pressable/',
+  'DigitalOcean': '/providers/digitalocean/',
+  'Linode': '/providers/linode/',
+  'AWS / Google Cloud / Azure': '/comparison/',
+  'Dedicated Server': '/comparison/'
 };
 
 function getProviderLink(providerName) {
-  const link = providerLinks[providerName];
-  return link ? `/comparison/#${link}` : '/comparison/';
+  return providerLinks[providerName] || '/comparison/';
 }
 
 function updateProgressBar() {

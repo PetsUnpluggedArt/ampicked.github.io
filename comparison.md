@@ -419,38 +419,40 @@ function renderComparison(filteredProviders) {
   filteredProviders.forEach(p => {
     const providerId = p.name.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '');
     html += `
-      <div class="provider-card" id="${providerId}">
-        <h3>${p.name}</h3>
-        <span class="card-tier">${p.tier}</span>
-        
-        <div class="card-price">$${p.monthlyPrice}/month</div>
-        <div class="card-price-note">from: $${p.priceRange}/month</div>
-        
-        <div class="card-ideal">
-          <strong>Best For</strong>
-          ${p.ideal}
-        </div>
-
-        <div class="stats-grid">
-          <div class="stat-item">
-            <strong>Uptime</strong>
-            ${p.uptime}
+      <a href="/choose-hosting/#${p.name.toLowerCase().replace(/\s+/g, '-')}" style="text-decoration: none; color: inherit; display: flex; flex-direction: column; height: 100%;">
+        <div class="provider-card" id="${providerId}" style="cursor: pointer; flex-grow: 1;">
+          <h3>${p.name}</h3>
+          <span class="card-tier">${p.tier}</span>
+          
+          <div class="card-price">$${p.monthlyPrice}/month</div>
+          <div class="card-price-note">from: $${p.priceRange}/month</div>
+          
+          <div class="card-ideal">
+            <strong>Best For</strong>
+            ${p.ideal}
           </div>
-          <div class="stat-item">
-            <strong>Support</strong>
-            ${p.support}
+
+          <div class="stats-grid">
+            <div class="stat-item">
+              <strong>Uptime</strong>
+              ${p.uptime}
+            </div>
+            <div class="stat-item">
+              <strong>Support</strong>
+              ${p.support}
+            </div>
           </div>
-        </div>
 
-        <div class="features-section">
-          <strong>Key Features</strong>
-          <ul class="features-list">
-            ${p.features.map(f => `<li>${f}</li>`).join('')}
-          </ul>
-        </div>
+          <div class="features-section">
+            <strong>Key Features</strong>
+            <ul class="features-list">
+              ${p.features.map(f => `<li>${f}</li>`).join('')}
+            </ul>
+          </div>
 
-        <a href="/choose-hosting/#${p.name.toLowerCase().replace(/\s+/g, '-')}" class="btn-learn">Learn More</a>
-      </div>
+          <div class="btn-learn" style="display: inline-block; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 12px 24px; border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 0.95em; transition: all 0.3s ease; align-self: flex-start; margin-top: auto;">Learn More →</div>
+        </div>
+      </a>
     `;
   });
 
