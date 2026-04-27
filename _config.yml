@@ -24,6 +24,9 @@ collections:
   posts:
     output: true
     permalink: /:title/
+  comparisons:
+    output: true
+    permalink: /providers/:title/
 
 # Defaults
 defaults:
@@ -37,6 +40,11 @@ defaults:
       type: "posts"
     values:
       layout: "post"
+  - scope:
+      path: ""
+      type: "comparisons"
+    values:
+      layout: "comparison"
 
 # Analytics
 google_analytics: G-QKR6GF3W3X
