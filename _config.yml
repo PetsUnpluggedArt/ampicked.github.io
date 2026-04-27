@@ -1,0 +1,42 @@
+# Ampicked Jekyll Configuration
+title: Ampicked
+description: Expert WordPress Hosting Reviews & Comparisons
+baseurl: ""
+url: "https://ampicked.com"
+author: "Tony Johnson"
+
+# Build settings
+markdown: kramdown
+theme: null
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Exclude from processing
+exclude:
+  - .gitignore
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+
+# Collections
+collections:
+  posts:
+    output: true
+    permalink: /:title/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+
+# Analytics
+google_analytics: G-QKR6GF3W3X
