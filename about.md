@@ -1,8 +1,8 @@
 ---
 layout: default
 title: About Ampicked - Expert Web Hosting Reviews
-description: Learn about Tony Johnson, the expert behind Ampicked, and our mission to help business owners choose the right WordPress hosting.
-keywords: web hosting expert, Tony Johnson, Ampicked mission, hosting reviews
+description: Learn about Tony Jackson, the expert behind Ampicked, and our mission to help business owners choose the right WordPress hosting.
+keywords: web hosting expert, Tony Jackson, Ampicked mission, hosting reviews
 permalink: /about/
 ---
 
@@ -26,7 +26,7 @@ permalink: /about/
         </section>
 
         <section>
-            <h2 class="section-title">Meet Tony Johnson</h2>
+            <h2 class="section-title">Meet Tony Jackson</h2>
             <div style="background: white; padding: 40px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);">
                 <div style="max-width: 800px; margin: 0 auto; line-height: 1.8;">
                     <p style="font-size: 1.05em; margin-bottom: 20px;">
