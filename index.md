@@ -1,142 +1,141 @@
 ---
 layout: default
-title: Ampicked - Web Hosting Reviews & Comparisons for WordPress
-description: Find the best WordPress hosting for your needs. Compare hosting providers by budget, performance, features, or use case. Expert reviews with benchmarks and pricing.
-keywords: WordPress hosting, web hosting reviews, best hosting providers, hosting comparison
+title: Ampicked - Find Your Perfect WordPress Host
+description: Interactive hosting recommendations and comparisons. Take a quiz, compare providers, or use our ROI calculator.
+keywords: WordPress hosting, hosting comparison, best hosting, hosting reviews
 permalink: /
 ---
 
-<header>
-    <div class="container">
-        <h1>🏆 Ampicked</h1>
-        <p>Expert WordPress Hosting Reviews & Comparisons</p>
-        <p class="tagline">Find the perfect hosting for your site's needs and budget</p>
+## Expert WordPress Hosting Guidance
+
+Stop guessing about hosting. Get personalized recommendations based on your situation.
+
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin: 40px 0;">
+
+  <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 30px; border-radius: 8px; text-align: center; cursor: pointer; transition: transform 0.3s;" onclick="location.href='/quiz/'">
+    <div style="font-size: 40px; margin-bottom: 10px;">🎯</div>
+    <h3 style="margin: 10px 0; color: white;">Take the Quiz</h3>
+    <p style="margin: 0; opacity: 0.95;">Answer 5 questions. Get a personalized hosting recommendation in 2 minutes.</p>
+  </div>
+
+  <div style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); color: white; padding: 30px; border-radius: 8px; text-align: center; cursor: pointer; transition: transform 0.3s;" onclick="location.href='/comparison/'">
+    <div style="font-size: 40px; margin-bottom: 10px;">⚖️</div>
+    <h3 style="margin: 10px 0; color: white;">Compare Providers</h3>
+    <p style="margin: 0; opacity: 0.95;">Side-by-side comparison of 9 hosting providers. Filter by price, features, and use case.</p>
+  </div>
+
+  <div style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); color: white; padding: 30px; border-radius: 8px; text-align: center; cursor: pointer; transition: transform 0.3s;" onclick="location.href='/calculator/'">
+    <div style="font-size: 40px; margin-bottom: 10px;">💰</div>
+    <h3 style="margin: 10px 0; color: white;">ROI Calculator</h3>
+    <p style="margin: 0; opacity: 0.95;">See how much poor hosting is costing you in hidden expenses.</p>
+  </div>
+
+</div>
+
+---
+
+## Why Ampicked?
+
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 25px; margin: 40px 0;">
+  <div style="text-align: center;">
+    <div style="font-size: 32px; margin-bottom: 10px;">📊</div>
+    <h4>Data-Driven</h4>
+    <p>Real benchmarks, actual customer experiences, no fluff or sales pitch.</p>
+  </div>
+
+  <div style="text-align: center;">
+    <div style="font-size: 32px; margin-bottom: 10px;">🎯</div>
+    <h4>Personalized</h4>
+    <p>We don't have a "best host." We have the best host for YOUR situation.</p>
+  </div>
+
+  <div style="text-align: center;">
+    <div style="font-size: 32px; margin-bottom: 10px;">📝</div>
+    <h4>Detailed Guides</h4>
+    <p>In-depth articles covering hosting types, comparisons, and decision frameworks.</p>
+  </div>
+
+  <div style="text-align: center;">
+    <div style="font-size: 32px; margin-bottom: 10px;">💡</div>
+    <h4>Cost Analysis</h4>
+    <p>See the real cost of cheap hosting. Not just monthly fees—hidden costs too.</p>
+  </div>
+
+  <div style="text-align: center;">
+    <div style="font-size: 32px; margin-bottom: 10px;">⚡</div>
+    <h4>Interactive</h4>
+    <p>Quiz, calculator, and comparison tools to make decisions faster.</p>
+  </div>
+
+  <div style="text-align: center;">
+    <div style="font-size: 32px; margin-bottom: 10px;">👨‍💼</div>
+    <h4>Expert Advice</h4>
+    <p>Written by someone who's hosted dozens of WordPress sites.</p>
+  </div>
+</div>
+
+---
+
+## Featured Articles
+
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; margin: 40px 0;">
+
+  <a href="/choose-hosting/" style="text-decoration: none; color: inherit;">
+    <div style="background: white; border: 1px solid #ddd; border-radius: 8px; padding: 25px; transition: box-shadow 0.3s, transform 0.3s; cursor: pointer;" onmouseover="this.style.boxShadow='0 4px 12px rgba(0,0,0,0.1)'; this.style.transform='translateY(-4px)'" onmouseout="this.style.boxShadow='none'; this.style.transform='none'">
+      <h3 style="margin-top: 0; color: #0066cc;">How to Choose the Right Web Host</h3>
+      <p style="color: #666; margin: 15px 0;">A complete guide to selecting hosting. Covers shared, managed WordPress, cloud, and VPS options with provider recommendations.</p>
+      <div style="color: #0066cc; font-weight: bold;">Read Article →</div>
     </div>
-</header>
+  </a>
 
-<main>
-    <div class="container">
-        <section>
-            <h2 class="section-title">Choose Your Path</h2>
-
-            <div class="affiliate-notice">
-                <strong>Affiliate Disclosure:</strong> Ampicked uses affiliate links in our reviews. We earn a commission when you purchase through our links at no extra cost to you. We only recommend services we genuinely believe in.
-            </div>
-
-            <div class="pathway-grid">
-                <div class="pathway-card">
-                    <h3>💰 Budget Hosting</h3>
-                    <p>Looking for affordable WordPress hosting without sacrificing quality? Compare the best budget-friendly options with detailed pricing breakdowns and performance benchmarks.</p>
-                    <a href="#budget" class="cta-button">View Budget Comparison</a>
-                </div>
-
-                <div class="pathway-card">
-                    <h3>⭐ Premium Hosting</h3>
-                    <p>Need enterprise-grade hosting with top-tier performance and support? Explore premium managed WordPress hosts designed for professional sites and agencies.</p>
-                    <a href="#premium" class="cta-button">View Premium Comparison</a>
-                </div>
-
-                <div class="pathway-card">
-                    <h3>🎯 Hosting by Use Case</h3>
-                    <p>Find hosting matched to your specific needs—whether it's a blog, e-commerce store, membership site, or high-traffic content network. Let your use case guide the choice.</p>
-                    <a href="#usecase" class="cta-button">Find Your Match</a>
-                </div>
-
-                <div class="pathway-card">
-                    <h3>🔄 Migrate to Better Hosting</h3>
-                    <p>Ready to switch hosting providers? Step-by-step migration guide covering DNS changes, backup strategies, downtime prevention, and provider-specific tools.</p>
-                    <a href="#migrate" class="cta-button">View Migration Guide</a>
-                </div>
-            </div>
-        </section>
-
-        <section>
-            <h2 class="section-title">Why Ampicked?</h2>
-
-            <div class="features-section">
-                <div class="features-grid">
-                    <div class="feature-item">
-                        <h4>📊 Data-Driven</h4>
-                        <p>Real performance benchmarks, uptime data, and pricing analysis—not marketing claims.</p>
-                    </div>
-
-                    <div class="feature-item">
-                        <h4>⚡ Performance First</h4>
-                        <p>Load times matter. We test actual server performance across providers.</p>
-                    </div>
-
-                    <div class="feature-item">
-                        <h4>💬 Honest Reviews</h4>
-                        <p>Pros and cons clearly stated. No sugar-coating or hidden drawbacks.</p>
-                    </div>
-
-                    <div class="feature-item">
-                        <h4>🎯 Use-Case Focused</h4>
-                        <p>Different sites need different hosting. We match recommendations to your needs.</p>
-                    </div>
-
-                    <div class="feature-item">
-                        <h4>🔄 Regularly Updated</h4>
-                        <p>Pricing, features, and performance data updated quarterly to stay current.</p>
-                    </div>
-
-                    <div class="feature-item">
-                        <h4>📱 Always Available</h4>
-                        <p>Mobile-friendly guides and comparison tools accessible anywhere.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section>
-            <h2 class="section-title">Learn From Our Blog</h2>
-
-            <div class="pathway-grid">
-                <div class="pathway-card">
-                    <h3>📝 WordPress Hosting Mistakes</h3>
-                    <p>Discover the 5 most common WordPress hosting mistakes that kill your SEO rankings and hurt your bottom line—and how to avoid them.</p>
-                    <a href="/wordpress-hosting-mistakes/" class="cta-button">Read Article</a>
-                </div>
-
-                <div class="pathway-card">
-                    <h3>💸 The True Cost of Cheap Hosting</h3>
-                    <p>Cheap hosting seems like a bargain until you see the hidden costs. Learn why cheap hosting actually costs $43,616/year in lost revenue.</p>
-                    <a href="/cheap-hosting-costs/" class="cta-button">Read Article</a>
-                </div>
-
-                <div class="pathway-card">
-                    <h3>🎯 How to Choose the Right Host</h3>
-                    <p>A complete 2026 guide to selecting the perfect hosting provider for your business. Covers shared, managed WordPress, cloud, and VPS options.</p>
-                    <a href="/choose-hosting/" class="cta-button">Read Article</a>
-                </div>
-
-                <div class="pathway-card">
-                    <h3>👤 Meet the Expert</h3>
-                    <p>Learn about Tony Johnson's background helping business owners reduce hosting costs by 30-40% and improve their site performance.</p>
-                    <a href="/about/" class="cta-button">View Bio</a>
-                </div>
-            </div>
-        </section>
-
-        <section>
-            <div class="secondary-links">
-                <h3>Individual Host Reviews</h3>
-                <p>Looking for a detailed review of a specific host? Check out our expanded reviews:</p>
-                <ul style="list-style: none; margin: 20px 0;">
-                    <li style="margin-bottom: 10px;">
-                        <a href="#hostinger">→ Hostinger Review</a> 
-                        <span style="color: #999;"> - Budget-friendly with excellent uptime</span>
-                    </li>
-                    <li style="margin-bottom: 10px;">
-                        <a href="#bluehost">→ Bluehost Review</a> 
-                        <span style="color: #999;"> - Official WordPress.org recommendation</span>
-                    </li>
-                    <li style="margin-bottom: 10px;">
-                        <a href="#hostgator">→ HostGator Review</a> 
-                        <span style="color: #999;"> - Unmetered resources and 20+ year history</span>
-                    </li>
-                </ul>
-            </div>
-        </section>
+  <a href="/cheap-hosting-costs/" style="text-decoration: none; color: inherit;">
+    <div style="background: white; border: 1px solid #ddd; border-radius: 8px; padding: 25px; transition: box-shadow 0.3s, transform 0.3s; cursor: pointer;" onmouseover="this.style.boxShadow='0 4px 12px rgba(0,0,0,0.1)'; this.style.transform='translateY(-4px)'" onmouseout="this.style.boxShadow='none'; this.style.transform='none'">
+      <h3 style="margin-top: 0; color: #0066cc;">Why Cheap Hosting Costs You More</h3>
+      <p style="color: #666; margin: 15px 0;">The true cost of cheap hosting: downtime, slow performance, poor support. See the ROI of upgrading.</p>
+      <div style="color: #0066cc; font-weight: bold;">Read Article →</div>
     </div>
-</main>
+  </a>
+
+  <a href="/wordpress-hosting-mistakes/" style="text-decoration: none; color: inherit;">
+    <div style="background: white; border: 1px solid #ddd; border-radius: 8px; padding: 25px; transition: box-shadow 0.3s, transform 0.3s; cursor: pointer;" onmouseover="this.style.boxShadow='0 4px 12px rgba(0,0,0,0.1)'; this.style.transform='translateY(-4px)'" onmouseout="this.style.boxShadow='none'; this.style.transform='none'">
+      <h3 style="margin-top: 0; color: #0066cc;">5 Hosting Mistakes That Kill SEO</h3>
+      <p style="color: #666; margin: 15px 0;">Your hosting choice affects your search rankings. Discover the 5 hosting mistakes that tank SEO performance.</p>
+      <div style="color: #0066cc; font-weight: bold;">Read Article →</div>
+    </div>
+  </a>
+
+</div>
+
+---
+
+## Not Sure Where to Start?
+
+**If you have 2 minutes:** [Take the quiz](/quiz/) to get an instant recommendation tailored to your situation.
+
+**If you want to compare:** [See our hosting comparison](/comparison/) with filters by price, features, and use case.
+
+**If you want numbers:** [Use the ROI calculator](/calculator/) to see how much poor hosting is costing you.
+
+**If you want to learn:** [Read the complete hosting guide](/choose-hosting/) with decision frameworks and provider details.
+
+---
+
+## About Ampicked
+
+Ampicked exists because choosing a web host is confusing and stressful. There are hundreds of companies. They all claim to be the "best." The marketing is overwhelming.
+
+I've hosted dozens of WordPress sites. I've dealt with downtime, slow performance, and poor support. I've also experienced the opposite—reliable, fast hosting with expert help.
+
+The difference is huge. It's the difference between your site staying online and losing customers to downtime. Between ranking in Google and getting buried. Between smooth operation and constant firefighting.
+
+This site cuts through the noise. No affiliate pressure. No hidden agendas. Just honest data and personalized recommendations.
+
+**[Learn more about Ampicked](/about/)**
+
+---
+
+<div style="background: #f0f8ff; border-left: 4px solid #0066cc; padding: 25px; border-radius: 6px; margin: 40px 0; text-align: center;">
+  <h3 style="margin-top: 0;">Ready to find your perfect host?</h3>
+  <p>Start with the quiz, compare options, or dive into the guides.</p>
+  <a href="/quiz/" style="display: inline-block; padding: 12px 30px; background: #0066cc; color: white; text-decoration: none; border-radius: 4px; font-weight: bold; transition: background 0.3s;" onmouseover="this.style.background='#0052a3'" onmouseout="this.style.background='#0066cc'">Take the Quiz</a>
+</div>
