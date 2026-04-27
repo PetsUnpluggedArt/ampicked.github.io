@@ -416,8 +416,9 @@ function renderComparison(filteredProviders) {
   let html = '';
   
   filteredProviders.forEach(p => {
+    const providerId = p.name.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '');
     html += `
-      <div class="provider-card">
+      <div class="provider-card" id="${providerId}">
         <h3>${p.name}</h3>
         <span class="card-tier">${p.tier}</span>
         

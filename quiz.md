@@ -417,6 +417,28 @@ const quizData = {
 let currentAnswers = {};
 let currentQuestion = 0;
 
+// Map provider names to their comparison page anchors
+const providerLinks = {
+  'Bluehost': 'bluehost',
+  'Hostinger': 'hostinger',
+  'Hostinger WordPress': 'hostinger',
+  'SiteGround': 'siteground',
+  'Bluehost Pro': 'bluehost-pro',
+  'Kinsta': 'kinsta',
+  'Kinsta Cloud': 'kinsta',
+  'WP Engine': 'wp-engine',
+  'Pressable': 'pressable',
+  'DigitalOcean': 'digitalocean',
+  'Linode': 'linode',
+  'AWS / Google Cloud / Azure': null,
+  'Dedicated Server': null
+};
+
+function getProviderLink(providerName) {
+  const link = providerLinks[providerName];
+  return link ? `/comparison/#${link}` : '/comparison/';
+}
+
 function updateProgressBar() {
   const progress = ((currentQuestion + 1) / quizData.questions.length) * 100;
   document.getElementById('progress-fill').style.width = progress + '%';
@@ -552,7 +574,7 @@ function showResults(recommendation) {
       <h3 style="color: #333; font-size: 1.4em; margin-top: 40px; margin-bottom: 20px;">Top Providers</h3>
       ${recommendation.providers.map(p => `
         <div class="provider-suggestion">
-          <a href="/comparison/#${p.name.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '')}" style="text-decoration: none; color: inherit;">
+          <a href="${getProviderLink(p.name)}" style="text-decoration: none; color: inherit;">
             <h4 style="cursor: pointer; transition: color 0.2s ease;">${p.name}</h4>
             <div class="provider-price">${p.price}</div>
             <div class="provider-reason">💡 ${p.reason}</div>
