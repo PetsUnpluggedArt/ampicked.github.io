@@ -6,164 +6,230 @@ keywords: hosting comparison, WordPress hosting comparison, hosting providers, b
 permalink: /comparison/
 ---
 
-## Hosting Provider Comparison
+<div id="comparison-tool" style="max-width: 1200px; margin: 0 auto;">
+  
+  <!-- Header -->
+  <div style="text-align: center; margin-bottom: 50px;">
+    <h1 style="color: #333; font-size: 2.5em; margin-bottom: 15px;">Compare Hosting Providers</h1>
+    <p style="color: #666; font-size: 1.1em;">Find the perfect hosting for your needs. Filter by type, budget, and use case.</p>
+  </div>
 
-Filter and compare hosting providers to find the best match for your needs.
-
-<div id="comparison-tool">
-  <div id="filter-controls" style="background: #f9f9f9; padding: 20px; border-radius: 6px; margin-bottom: 30px;">
-    <h3>Filter Providers</h3>
+  <!-- Filter Controls -->
+  <div id="filter-controls" style="background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); padding: 40px; border-radius: 12px; margin-bottom: 50px; border: 2px solid #dee2e6;">
+    <h2 style="color: #333; margin-top: 0; margin-bottom: 30px; font-size: 1.5em;">🔍 Narrow It Down</h2>
     
-    <div style="margin: 15px 0;">
-      <label><strong>Hosting Type:</strong></label>
-      <select id="filter-type" onchange="applyFilters()" style="padding: 8px; margin-left: 10px;">
-        <option value="">All Types</option>
-        <option value="shared">Shared Hosting</option>
-        <option value="managed">Managed WordPress</option>
-        <option value="cloud">Cloud/VPS</option>
-      </select>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 25px;">
+      <div>
+        <label style="display: block; font-weight: 600; color: #333; margin-bottom: 12px; font-size: 1em;">Hosting Type</label>
+        <select id="filter-type" onchange="applyFilters()" style="width: 100%; padding: 12px 15px; border: 2px solid #dee2e6; border-radius: 6px; font-size: 1em; cursor: pointer; transition: border-color 0.3s;">
+          <option value="">All Types</option>
+          <option value="shared">Shared Hosting</option>
+          <option value="managed">Managed WordPress</option>
+          <option value="cloud">Cloud/VPS</option>
+        </select>
+      </div>
+
+      <div>
+        <label style="display: block; font-weight: 600; color: #333; margin-bottom: 12px; font-size: 1em;">Price Range</label>
+        <select id="filter-price" onchange="applyFilters()" style="width: 100%; padding: 12px 15px; border: 2px solid #dee2e6; border-radius: 6px; font-size: 1em; cursor: pointer; transition: border-color 0.3s;">
+          <option value="">All Prices</option>
+          <option value="0-10">Under $10/month</option>
+          <option value="10-30">$10-30/month</option>
+          <option value="30-100">$30-100/month</option>
+          <option value="100+">$100+/month</option>
+        </select>
+      </div>
+
+      <div>
+        <label style="display: block; font-weight: 600; color: #333; margin-bottom: 12px; font-size: 1em;">Best For</label>
+        <select id="filter-use-case" onchange="applyFilters()" style="width: 100%; padding: 12px 15px; border: 2px solid #dee2e6; border-radius: 6px; font-size: 1em; cursor: pointer; transition: border-color 0.3s;">
+          <option value="">All Use Cases</option>
+          <option value="hobby">Hobby/Portfolio</option>
+          <option value="small-business">Small Business</option>
+          <option value="growing">Growing Site</option>
+          <option value="high-traffic">High Traffic</option>
+        </select>
+      </div>
     </div>
 
-    <div style="margin: 15px 0;">
-      <label><strong>Price Range:</strong></label>
-      <select id="filter-price" onchange="applyFilters()" style="padding: 8px; margin-left: 10px;">
-        <option value="">All Prices</option>
-        <option value="0-10">Under $10/month</option>
-        <option value="10-30">$10-30/month</option>
-        <option value="30-100">$30-100/month</option>
-        <option value="100+">$100+/month</option>
-      </select>
-    </div>
-
-    <div style="margin: 15px 0;">
-      <label><strong>Best For:</strong></label>
-      <select id="filter-use-case" onchange="applyFilters()" style="padding: 8px; margin-left: 10px;">
-        <option value="">All Use Cases</option>
-        <option value="hobby">Hobby/Portfolio</option>
-        <option value="small-business">Small Business</option>
-        <option value="growing">Growing Site</option>
-        <option value="high-traffic">High Traffic</option>
-      </select>
+    <div style="text-align: center; margin-top: 25px;">
+      <button onclick="resetFilters()" style="padding: 10px 25px; background: white; color: #667eea; border: 2px solid #667eea; border-radius: 6px; cursor: pointer; font-weight: 600; transition: all 0.3s;">Clear All Filters</button>
     </div>
   </div>
 
-  <div id="comparison-matrix" style="overflow-x: auto;">
-    <!-- Comparison table will be rendered here -->
+  <!-- Results Counter -->
+  <div id="results-info" style="text-align: center; margin-bottom: 30px; color: #666; font-size: 1.05em;">
+    <span id="results-count">Showing 9 providers</span>
   </div>
 
-  <div id="no-results" style="display: none; text-align: center; padding: 40px; color: #666;">
-    <p>No providers match your filters. Try adjusting your selection.</p>
+  <!-- Comparison Cards -->
+  <div id="comparison-matrix" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 30px; margin-bottom: 50px;">
+    <!-- Provider cards will be rendered here -->
   </div>
+
+  <!-- No Results -->
+  <div id="no-results" style="display: none; text-align: center; padding: 60px 20px;">
+    <div style="font-size: 4em; margin-bottom: 20px;">🔍</div>
+    <h3 style="color: #333; font-size: 1.5em; margin-bottom: 10px;">No providers found</h3>
+    <p style="color: #666; font-size: 1.05em; margin-bottom: 25px;">Try adjusting your filters to see more options.</p>
+    <button onclick="resetFilters()" style="padding: 12px 30px; background: #667eea; color: white; border: none; border-radius: 6px; cursor: pointer; font-weight: 600; font-size: 1em;">Reset Filters</button>
+  </div>
+
 </div>
 
 <style>
-.comparison-table {
-  width: 100%;
-  border-collapse: collapse;
-  background: white;
-  margin-bottom: 30px;
-}
-
-.comparison-table th,
-.comparison-table td {
-  padding: 15px;
-  text-align: left;
-  border-bottom: 1px solid #ddd;
-}
-
-.comparison-table th {
-  background: #0066cc;
-  color: white;
-  font-weight: bold;
-}
-
-.comparison-table tbody tr:hover {
-  background: #f9f9f9;
-}
-
-.provider-name {
-  font-weight: bold;
-  font-size: 16px;
-  color: #0066cc;
-}
-
-.price-highlight {
-  font-weight: bold;
-  font-size: 18px;
-  color: #333;
-}
-
-.feature-check {
-  color: #28a745;
-  font-weight: bold;
-}
-
-.feature-partial {
-  color: #ff9800;
-  font-weight: bold;
-}
-
-.feature-cross {
-  color: #dc3545;
-}
-
 .provider-card {
   background: white;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 20px;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 25px;
   margin-bottom: 20px;
+  transition: all 0.3s ease;
+  border-top: 4px solid transparent;
+  border-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-image-slice: 1;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.provider-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(102, 126, 234, 0.15);
 }
 
 .provider-card h3 {
-  margin-top: 0;
-  color: #0066cc;
-}
-
-.card-price {
-  font-size: 20px;
-  font-weight: bold;
+  margin: 0 0 10px 0;
   color: #333;
-  margin: 10px 0;
+  font-size: 1.6em;
+  font-weight: 700;
 }
 
 .card-tier {
   display: inline-block;
-  background: #e3f2fd;
-  color: #0066cc;
-  padding: 4px 12px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 6px 14px;
   border-radius: 20px;
-  font-size: 12px;
-  font-weight: bold;
-  margin: 10px 0;
+  font-size: 0.85em;
+  font-weight: 600;
+  margin-bottom: 15px;
+  width: fit-content;
 }
 
-.features-list {
+.card-price {
+  font-size: 2.2em;
+  font-weight: 700;
+  color: #667eea;
+  margin: 15px 0 5px 0;
+}
+
+.card-price-note {
+  color: #999;
+  font-size: 0.9em;
+  margin-bottom: 15px;
+}
+
+.card-ideal {
+  background: #fff9e6;
+  border-left: 4px solid #ff9800;
+  padding: 12px 15px;
+  margin: 15px 0;
+  border-radius: 4px;
+  font-size: 0.95em;
+}
+
+.card-ideal strong {
+  color: #667eea;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  margin: 15px 0;
+  padding: 15px;
+  background: #f8f9fa;
+  border-radius: 6px;
+}
+
+.stat-item strong {
+  display: block;
+  color: #667eea;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.stat-item {
+  font-size: 0.95em;
+  color: #555;
+}
+
+.features-section {
   margin: 15px 0;
 }
 
+.features-section strong {
+  display: block;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.features-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
 .features-list li {
-  margin: 8px 0;
+  margin: 6px 0;
   color: #666;
+  font-size: 0.95em;
+  padding-left: 20px;
+  position: relative;
 }
 
-.provider-cta {
-  margin-top: 15px;
+.features-list li:before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: #28a745;
+  font-weight: bold;
 }
 
-.provider-cta a {
+.btn-learn {
   display: inline-block;
-  padding: 10px 16px;
-  background: #0066cc;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   color: white;
+  padding: 12px 24px;
+  border-radius: 6px;
   text-decoration: none;
-  border-radius: 4px;
-  font-size: 14px;
-  transition: background 0.3s;
+  font-weight: 600;
+  font-size: 0.95em;
+  transition: all 0.3s ease;
+  align-self: flex-start;
+  margin-top: auto;
 }
 
-.provider-cta a:hover {
-  background: #0052a3;
+.btn-learn:hover {
+  opacity: 0.9;
+  transform: translateX(4px);
+}
+
+@media (max-width: 768px) {
+  .provider-card {
+    padding: 20px;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .card-price {
+    font-size: 1.8em;
+  }
 }
 </style>
 
@@ -177,11 +243,11 @@ const providers = [
     bestFor: 'hobby',
     tier: 'Shared Hosting',
     features: [
-      '✓ WordPress.org recommended',
-      '✓ Easy setup',
-      '✓ 24/7 support (email/chat)',
-      '○ Limited uptime guarantee',
-      '○ Shared server resources'
+      'WordPress.org recommended',
+      'Easy setup',
+      '24/7 support (email/chat)',
+      'Limited uptime guarantee',
+      'Shared server resources'
     ],
     uptime: '99.9%',
     support: '24/7 Chat/Email',
@@ -195,11 +261,11 @@ const providers = [
     bestFor: 'hobby',
     tier: 'Shared Hosting',
     features: [
-      '✓ Good uptime',
-      '✓ Responsive support',
-      '✓ WordPress-optimized',
-      '○ Setup can be tricky',
-      '○ Limited customization'
+      'Good uptime',
+      'Responsive support',
+      'WordPress-optimized',
+      'Setup can be tricky',
+      'Limited customization'
     ],
     uptime: '99.9%',
     support: '24/7 Chat/Email',
@@ -213,11 +279,11 @@ const providers = [
     bestFor: 'small-business',
     tier: 'Managed WordPress',
     features: [
-      '✓ Excellent support',
-      '✓ Fast servers',
-      '✓ WordPress-specialized',
-      '✓ Staging environment',
-      '✓ Auto updates'
+      'Excellent support',
+      'Fast servers',
+      'WordPress-specialized',
+      'Staging environment',
+      'Auto updates'
     ],
     uptime: '99.99%',
     support: '24/7 Phone/Chat',
@@ -231,11 +297,11 @@ const providers = [
     bestFor: 'growing',
     tier: 'Managed WordPress',
     features: [
-      '✓ WordPress.org recommended',
-      '✓ Better performance than shared',
-      '✓ Dedicated resources',
-      '✓ Daily backups',
-      '✓ Expert support'
+      'WordPress.org recommended',
+      'Better performance than shared',
+      'Dedicated resources',
+      'Daily backups',
+      'Expert support'
     ],
     uptime: '99.9%',
     support: '24/7 Phone/Chat',
@@ -249,11 +315,11 @@ const providers = [
     bestFor: 'high-traffic',
     tier: 'Premium Managed',
     features: [
-      '✓ Industry-leading speed',
-      '✓ Exceptional support',
-      '✓ Staging environments',
-      '✓ Automatic backups',
-      '✓ WordPress-optimized'
+      'Industry-leading speed',
+      'Exceptional support',
+      'Staging environments',
+      'Automatic backups',
+      'WordPress-optimized'
     ],
     uptime: '99.99%',
     support: '24/7 Chat',
@@ -267,11 +333,11 @@ const providers = [
     bestFor: 'high-traffic',
     tier: 'Premium Managed',
     features: [
-      '✓ Enterprise-grade uptime',
-      '✓ Best support team',
-      '✓ Performance monitoring',
-      '✓ Automatic updates',
-      '✓ Development staging'
+      'Enterprise-grade uptime',
+      'Best support team',
+      'Performance monitoring',
+      'Automatic updates',
+      'Development staging'
     ],
     uptime: '99.99%',
     support: '24/7 Phone/Chat',
@@ -285,11 +351,11 @@ const providers = [
     bestFor: 'growing',
     tier: 'Premium Managed',
     features: [
-      '✓ Automattic-owned (trusted)',
-      '✓ Very fast infrastructure',
-      '✓ Content creator focused',
-      '✓ SEO optimization',
-      '✓ Expert support'
+      'Automattic-owned (trusted)',
+      'Very fast infrastructure',
+      'Content creator focused',
+      'SEO optimization',
+      'Expert support'
     ],
     uptime: '99.99%',
     support: '24/7 Chat',
@@ -303,11 +369,11 @@ const providers = [
     bestFor: 'high-traffic',
     tier: 'Cloud/VPS',
     features: [
-      '✓ Simplest VPS interface',
-      '✓ Great documentation',
-      '✓ Low cost',
-      '○ Minimal support (community)',
-      '○ Requires technical knowledge'
+      'Simplest VPS interface',
+      'Great documentation',
+      'Low cost',
+      'Minimal support (community)',
+      'Requires technical knowledge'
     ],
     uptime: '99.99%',
     support: 'Community',
@@ -321,11 +387,11 @@ const providers = [
     bestFor: 'high-traffic',
     tier: 'Cloud/VPS',
     features: [
-      '✓ Reliable infrastructure',
-      '✓ Better support than DigitalOcean',
-      '✓ Good documentation',
-      '○ Requires setup/maintenance',
-      '○ Not WordPress-specific'
+      'Reliable infrastructure',
+      'Better support than DigitalOcean',
+      'Good documentation',
+      'Requires setup/maintenance',
+      'Not WordPress-specific'
     ],
     uptime: '99.99%',
     support: '24/7 Support (Premium)',
@@ -335,16 +401,19 @@ const providers = [
 
 function renderComparison(filteredProviders) {
   const container = document.getElementById('comparison-matrix');
+  const countEl = document.getElementById('results-count');
   
   if (filteredProviders.length === 0) {
     document.getElementById('no-results').style.display = 'block';
     container.innerHTML = '';
+    countEl.textContent = 'No providers found';
     return;
   }
 
   document.getElementById('no-results').style.display = 'none';
+  countEl.textContent = `Showing ${filteredProviders.length} provider${filteredProviders.length !== 1 ? 's' : ''}`;
 
-  let html = '<div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 20px;">';
+  let html = '';
   
   filteredProviders.forEach(p => {
     html += `
@@ -353,33 +422,36 @@ function renderComparison(filteredProviders) {
         <span class="card-tier">${p.tier}</span>
         
         <div class="card-price">$${p.monthlyPrice}/month</div>
-        <div style="color: #666; font-size: 14px;">from: $${p.priceRange}/month</div>
+        <div class="card-price-note">from: $${p.priceRange}/month</div>
         
-        <div style="margin: 15px 0; padding: 15px; background: #f0f8ff; border-radius: 4px;">
-          <strong style="color: #0066cc;">Best For:</strong>
-          <div>${p.ideal}</div>
+        <div class="card-ideal">
+          <strong>Best For</strong>
+          ${p.ideal}
         </div>
 
-        <div style="margin: 15px 0;">
-          <strong>Uptime:</strong> ${p.uptime}<br>
-          <strong>Support:</strong> ${p.support}
+        <div class="stats-grid">
+          <div class="stat-item">
+            <strong>Uptime</strong>
+            ${p.uptime}
+          </div>
+          <div class="stat-item">
+            <strong>Support</strong>
+            ${p.support}
+          </div>
         </div>
 
-        <div class="features-list">
-          <strong>Features:</strong>
-          <ul style="margin: 10px 0; padding-left: 20px;">
+        <div class="features-section">
+          <strong>Key Features</strong>
+          <ul class="features-list">
             ${p.features.map(f => `<li>${f}</li>`).join('')}
           </ul>
         </div>
 
-        <div class="provider-cta">
-          <a href="/choose-hosting/#${p.name.toLowerCase().replace(/\s+/g, '-')}" target="_blank">Learn More</a>
-        </div>
+        <a href="/choose-hosting/#${p.name.toLowerCase().replace(/\s+/g, '-')}" class="btn-learn">Learn More</a>
       </div>
     `;
   });
 
-  html += '</div>';
   container.innerHTML = html;
 }
 
@@ -402,6 +474,13 @@ function applyFilters() {
   });
 
   renderComparison(filtered);
+}
+
+function resetFilters() {
+  document.getElementById('filter-type').value = '';
+  document.getElementById('filter-price').value = '';
+  document.getElementById('filter-use-case').value = '';
+  renderComparison(providers);
 }
 
 // Initialize on page load
