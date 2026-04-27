@@ -1,6 +1,7 @@
 ---
-layout: guide
+layout: blog
 title: How to Choose the Right Web Host for Your Business in 2026
+date: 2026-04-27
 description: A complete 2026 guide to selecting the perfect hosting provider. Covers shared, managed WordPress, cloud, and VPS options with provider recommendations.
 keywords: how to choose web hosting, hosting guide 2026, shared vs managed hosting, VPS hosting
 permalink: /choose-hosting/

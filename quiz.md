@@ -6,11 +6,16 @@ keywords: hosting quiz, find hosting, hosting recommendation, WordPress hosting 
 permalink: /quiz/
 ---
 
-<div style="padding: 60px 20px;">
+<header style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 60px 20px; text-align: center; margin: -60px -20px 40px -20px;">
+    <div style="max-width: 700px; margin: 0 auto;">
+        <h1 style="font-size: 2.5em; margin-bottom: 15px; font-weight: 700;">Find Your Perfect WordPress Host</h1>
+        <p style="font-size: 1.1em; opacity: 0.95;">Answer 5 quick questions and get a personalized recommendation</p>
+    </div>
+</header>
+
+<div style="padding: 0 20px 60px 20px;">
 <div id="quiz-container" style="max-width: 700px; margin: 0 auto;">
 
-## Find Your Perfect WordPress Host
-  
   <!-- Progress Bar -->
   <div id="progress-bar" style="margin-bottom: 40px;">
     <div style="background: #e9ecef; border-radius: 10px; height: 8px; margin-bottom: 15px; overflow: hidden;">
