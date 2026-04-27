@@ -8,6 +8,7 @@ permalink: /quiz/
 
 ## Find Your Perfect WordPress Host
 
+<div style="padding: 60px 20px;">
 <div id="quiz-container" style="max-width: 700px; margin: 0 auto;">
   
   <!-- Progress Bar -->
@@ -609,3 +610,4 @@ function resetQuiz() {
 // Initialize on page load
 document.addEventListener('DOMContentLoaded', renderQuestion);
 </script>
+</div>

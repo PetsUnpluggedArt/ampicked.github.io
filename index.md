@@ -107,7 +107,7 @@ document.addEventListener('DOMContentLoaded', renderToolsCarousel);
   <div style="max-width: 1200px; margin: 0 auto;">
     <h2 style="text-align: center; color: #333; font-size: 2.2em; margin-bottom: 50px;">Why Ampicked?</h2>
     
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 30px;">
+    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px;">
       <div style="text-align: center; padding: 20px;">
         <div style="font-size: 40px; margin-bottom: 15px;">📊</div>
         <h4 style="color: #667eea; font-size: 1.1em;">Data-Driven</h4>

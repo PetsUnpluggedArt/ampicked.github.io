@@ -6,6 +6,7 @@ keywords: hosting comparison, WordPress hosting comparison, hosting providers, b
 permalink: /comparison/
 ---
 
+<div style="padding: 60px 20px;">
 <div id="comparison-tool" style="max-width: 1200px; margin: 0 auto;">
   
   <!-- Header -->
@@ -489,3 +490,4 @@ document.addEventListener('DOMContentLoaded', () => {
   renderComparison(providers);
 });
 </script>
+</div>
