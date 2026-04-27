@@ -2,6 +2,39 @@
 layout: default
 ---
 
+<!-- BlogPosting Schema Markup -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "{{ page.title }}",
+  "description": "{{ page.description }}",
+  "image": "https://ampicked.com/images/ampicked-logo.png",
+  "datePublished": "{{ page.date | date_to_xmlschema }}",
+  "dateModified": "{{ page.date | date_to_xmlschema }}",
+  "author": {
+    "@type": "Organization",
+    "name": "Ampicked",
+    "url": "https://ampicked.com",
+    "logo": "https://ampicked.com/images/ampicked-logo.png"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Ampicked",
+    "url": "https://ampicked.com",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://ampicked.com/images/ampicked-logo.png"
+    }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://ampicked.com{{ page.permalink }}"
+  },
+  "keywords": "{{ page.keywords }}"
+}
+</script>
+
 <div style="padding: 60px 20px; background-color: #f8f9fa;">
     <div style="max-width: 800px; margin: 0 auto;">
         <article style="background: white; padding: 50px 40px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);">

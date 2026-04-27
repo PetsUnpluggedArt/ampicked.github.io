@@ -7,12 +7,12 @@
 | SiteGround | `https://www.siteground.com/index.htm?afcode=3e74201a12b5ba9ca32e31cdff01ce74` | ✅ Active | `2026-04-27-siteground-review.md` | ✅ Active CTA |
 | WPEngine | [PENDING] | ⏳ Under Review | `2026-04-27-wp-engine-review.md` | 🔲 Placeholder CTA |
 | Hostinger | [PENDING] | ⏳ Under Review | `2026-04-27-hostinger-review.md` | 🔲 Placeholder CTA |
-| Bluehost | [NOT APPLIED] | ❌ Not Started | `2026-04-27-bluehost-review.md` | 🔲 Placeholder CTA |
-| Bluehost Pro | [NOT APPLIED] | ❌ Not Started | `2026-04-27-bluehost-pro-review.md` | 🔲 Placeholder CTA |
-| DigitalOcean | [NOT APPLIED] | ❌ Not Started | `2026-04-27-digitalocean-review.md` | 🔲 Placeholder CTA |
-| Kinsta | [NOT APPLIED] | ❌ Not Started | `2026-04-27-kinsta-review.md` | 🔲 Placeholder CTA |
-| Pressable | [NOT APPLIED] | ❌ Not Started | `2026-04-27-pressable-review.md` | 🔲 Placeholder CTA |
-| Linode | [NOT APPLIED] | ❌ Not Started | `2026-04-27-linode-review.md` | 🔲 Placeholder CTA |
+| Bluehost | [PENDING] | ⏳ Under Review | `2026-04-27-bluehost-review.md` | 🔲 Placeholder CTA |
+| Bluehost Pro | [SHARED] | ⏳ Under Review | `2026-04-27-bluehost-pro-review.md` | 🔲 Placeholder CTA |
+| DigitalOcean | [PENDING] | ⏳ Under Review | `2026-04-27-digitalocean-review.md` | 🔲 Placeholder CTA |
+| Kinsta | [PENDING] | ⏳ Under Review | `2026-04-27-kinsta-review.md` | 🔲 Placeholder CTA |
+| Pressable | [PENDING] | ⏳ Under Review | `2026-04-27-pressable-review.md` | 🔲 Placeholder CTA |
+| Linode | [PENDING] | ⏳ Under Review | `2026-04-27-linode-review.md` | 🔲 Placeholder CTA |
 
 ## CTA Implementation Status
 
