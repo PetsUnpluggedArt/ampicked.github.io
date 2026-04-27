@@ -9,6 +9,17 @@
       gtag('js', new Date());
       gtag('config', 'G-QKR6GF3W3X');
     </script>
+    <!-- Google Analytics Affiliate Tracking -->
+    <script>
+        function trackAffiliateClick(provider) {
+            if (typeof gtag !== 'undefined') {
+                gtag('event', 'affiliate_click', {
+                    'provider': provider,
+                    'link_type': 'review_button'
+                });
+            }
+        }
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WP Engine Review 2026 - Premium Managed WordPress Hosting</title>
@@ -180,7 +191,7 @@
                 <td>100K</td>
                 <td>10 GB</td>
                 <td>Unlimited</td>
-                <td><a href="https://www.wpengine.com/plans/?utm_source=ampicked&utm_medium=referral" target="_blank" rel="noopener noreferrer" class="cta-button" style="padding: 8px 15px; font-size: 0.9em; margin: 0;">Choose Plan</a></td>
+                <td><a href="https://www.wpengine.com/plans/?utm_source=ampicked&utm_medium=referral" target="_blank" rel="noopener noreferrer" class="cta-button" style="padding: 8px 15px; font-size: 0.9em; margin: 0;" onclick="trackAffiliateClick('WP Engine')">Choose Plan</a></td>
             </tr>
             <tr>
                 <td><strong>Professional</strong></td>
@@ -188,7 +199,7 @@
                 <td>500K</td>
                 <td>50 GB</td>
                 <td>Unlimited</td>
-                <td><a href="https://www.wpengine.com/plans/?utm_source=ampicked&utm_medium=referral" target="_blank" rel="noopener noreferrer" class="cta-button" style="padding: 8px 15px; font-size: 0.9em; margin: 0;">Choose Plan</a></td>
+                <td><a href="https://www.wpengine.com/plans/?utm_source=ampicked&utm_medium=referral" target="_blank" rel="noopener noreferrer" class="cta-button" style="padding: 8px 15px; font-size: 0.9em; margin: 0;" onclick="trackAffiliateClick('WP Engine')">Choose Plan</a></td>
             </tr>
             <tr>
                 <td><strong>Business</strong></td>
@@ -196,7 +207,7 @@
                 <td>2M</td>
                 <td>200 GB</td>
                 <td>Unlimited</td>
-                <td><a href="https://www.wpengine.com/plans/?utm_source=ampicked&utm_medium=referral" target="_blank" rel="noopener noreferrer" class="cta-button" style="padding: 8px 15px; font-size: 0.9em; margin: 0;">Choose Plan</a></td>
+                <td><a href="https://www.wpengine.com/plans/?utm_source=ampicked&utm_medium=referral" target="_blank" rel="noopener noreferrer" class="cta-button" style="padding: 8px 15px; font-size: 0.9em; margin: 0;" onclick="trackAffiliateClick('WP Engine')">Choose Plan</a></td>
             </tr>
             <tr>
                 <td><strong>Enterprise</strong></td>
@@ -449,7 +460,7 @@
 
         <p><strong>Rating: 4.9/5</strong> - The best managed WordPress hosting available. Highly recommended for enterprise and serious projects.</p>
 
-        <a href="https://www.wpengine.com/plans/?utm_source=ampicked&utm_medium=referral" class="cta-button" target="_blank" rel="noopener noreferrer">🔗 Explore WP Engine Solutions</a>
+        <a href="https://www.wpengine.com/plans/?utm_source=ampicked&utm_medium=referral" class="cta-button" target="_blank" rel="noopener noreferrer" onclick="trackAffiliateClick('WP Engine')">🔗 Explore WP Engine Solutions</a>
 
     </div>
 

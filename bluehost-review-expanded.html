@@ -99,6 +99,17 @@
         .article-link { background: white; padding: 15px; border-radius: 6px; text-decoration: none; color: #667eea; border-left: 4px solid #667eea; transition: all 0.3s ease; font-weight: 500; text-align: center; }
         .article-link:hover { background: #667eea; color: white; transform: translateY(-3px); }
     </style>
+    <!-- Google Analytics Affiliate Tracking -->
+    <script>
+        function trackAffiliateClick(provider) {
+            if (typeof gtag !== 'undefined') {
+                gtag('event', 'affiliate_click', {
+                    'provider': provider,
+                    'link_type': 'review_button'
+                });
+            }
+        }
+    </script>
 </head>
 <body>
     <nav>
@@ -413,7 +424,7 @@
 
         <p><strong>Rating: 4.1/5</strong> - Highly recommended for WordPress beginners and small businesses seeking official WordPress-recommended hosting.</p>
 
-        <a href="https://www.bluehost.com" class="cta-button" target="_blank" rel="noopener noreferrer">🔗 Start Your Bluehost Website</a>
+        <a href="https://www.bluehost.com" class="cta-button" target="_blank" rel="noopener noreferrer" onclick="trackAffiliateClick('Bluehost')">🔗 Start Your Bluehost Website</a>
     </div>
 
     <script>

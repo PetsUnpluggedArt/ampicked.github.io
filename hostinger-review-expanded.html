@@ -58,6 +58,17 @@
       "negativeNotes": ["Renewal prices increase significantly", "Some limitations on basic plan", "Customer service sometimes slow during peak times"]
     }
     </script>
+    <!-- Google Analytics Affiliate Tracking -->
+    <script>
+        function trackAffiliateClick(provider) {
+            if (typeof gtag !== 'undefined') {
+                gtag('event', 'affiliate_click', {
+                    'provider': provider,
+                    'link_type': 'review_button'
+                });
+            }
+        }
+    </script>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif; line-height: 1.6; color: #333; background-color: #f8f9fa; }
@@ -410,7 +421,7 @@
 
         <p><strong>Rating: 4.7/5</strong> - Highly recommended for anyone prioritizing exceptional value and strong performance at budget pricing.</p>
 
-        <a href="https://www.hostinger.com" class="cta-button" target="_blank" rel="noopener noreferrer">🔗 Start Your Hostinger Website</a>
+        <a href="https://www.hostinger.com" class="cta-button" target="_blank" rel="noopener noreferrer" onclick="trackAffiliateClick('Hostinger')">🔗 Start Your Hostinger Website</a>
     </div>
 
     <script>
