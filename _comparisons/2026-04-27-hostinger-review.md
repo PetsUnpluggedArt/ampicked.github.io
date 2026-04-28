@@ -1,7 +1,7 @@
 ---
 layout: comparison
 title: Hostinger Hosting Review - Best Budget WordPress Hosting
-description: Complete Hostinger review 2024. Affordable WordPress hosting starting at $2.99/month with solid performance, responsive support, and excellent value for budget-conscious beginners.
+description: Complete Hostinger review 2026. Affordable WordPress hosting starting at $2.99/month with solid performance, responsive support, and excellent value for budget-conscious beginners.
 keywords: hostinger review, hostinger hosting, hostinger wordpress, is hostinger good, cheap wordpress hosting, budget hosting, shared hosting
 date: 2026-04-27
 permalink: /providers/hostinger/
