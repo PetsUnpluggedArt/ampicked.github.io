@@ -89,71 +89,7 @@ permalink: /teachers/
         document.addEventListener('DOMContentLoaded', renderTeacherResources);
         </script>
 
-        <!-- SECTION 2: Getting Started Roadmap -->
-        <div style="background: white; padding: 60px 20px; margin: 0 -20px;">
-            <div style="max-width: 1200px; margin: 0 auto;">
-                <h2 style="color: #333; font-size: 2.2em; margin-bottom: 15px; text-align: center;">Getting Started: Your Teacher Website Roadmap</h2>
-                <p style="text-align: center; color: #666; font-size: 1.05em; margin-bottom: 50px;">Follow these 6 steps to launch your classroom website</p>
-
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-bottom: 60px;">
-                    <!-- Step 1 -->
-                    <a href="{{ '/teachers/choose-hosting/' | relative_url }}" style="text-decoration: none;">
-                        <div style="background: white; border: 2px solid #e8f3ff; border-radius: 12px; padding: 40px 30px; transition: all 0.3s; cursor: pointer;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 8px 25px rgba(74, 144, 226, 0.15)'" onmouseout="this.style.transform='none'; this.style.boxShadow='none'">
-                            <div style="font-size: 48px; font-weight: 700; color: #4a90e2; margin-bottom: 15px;">1</div>
-                            <h3 style="color: #357abd; font-size: 1.2em; margin: 0 0 12px 0;">Choose the Right Hosting for Teachers</h3>
-                            <p style="color: #666; margin: 0; font-size: 0.95em; line-height: 1.6;">Find affordable, reliable hosting that supports WordPress and student projects.</p>
-                        </div>
-                    </a>
-
-                    <!-- Step 2 -->
-                    <a href="{{ '/teachers/install-wordpress/' | relative_url }}" style="text-decoration: none;">
-                        <div style="background: white; border: 2px solid #e8f3ff; border-radius: 12px; padding: 40px 30px; transition: all 0.3s; cursor: pointer;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 8px 25px rgba(74, 144, 226, 0.15)'" onmouseout="this.style.transform='none'; this.style.boxShadow='none'">
-                            <div style="font-size: 48px; font-weight: 700; color: #4a90e2; margin-bottom: 15px;">2</div>
-                            <h3 style="color: #357abd; font-size: 1.2em; margin: 0 0 12px 0;">Install WordPress on Your Hosting</h3>
-                            <p style="color: #666; margin: 0; font-size: 0.95em; line-height: 1.6;">Most hosts offer one-click installation. Get WordPress up and running in minutes.</p>
-                        </div>
-                    </a>
-
-                    <!-- Step 3 -->
-                    <a href="{{ '/teachers/choose-theme/' | relative_url }}" style="text-decoration: none;">
-                        <div style="background: white; border: 2px solid #e8f3ff; border-radius: 12px; padding: 40px 30px; transition: all 0.3s; cursor: pointer;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 8px 25px rgba(74, 144, 226, 0.15)'" onmouseout="this.style.transform='none'; this.style.boxShadow='none'">
-                            <div style="font-size: 48px; font-weight: 700; color: #4a90e2; margin-bottom: 15px;">3</div>
-                            <h3 style="color: #357abd; font-size: 1.2em; margin: 0 0 12px 0;">Choose a Clean, Teacher-Friendly Theme</h3>
-                            <p style="color: #666; margin: 0; font-size: 0.95em; line-height: 1.6;">Select a simple, professional theme designed for education and clarity.</p>
-                        </div>
-                    </a>
-
-                    <!-- Step 4 -->
-                    <a href="{{ '/teachers/website-structure/' | relative_url }}" style="text-decoration: none;">
-                        <div style="background: white; border: 2px solid #e8f3ff; border-radius: 12px; padding: 40px 30px; transition: all 0.3s; cursor: pointer;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 8px 25px rgba(74, 144, 226, 0.15)'" onmouseout="this.style.transform='none'; this.style.boxShadow='none'">
-                            <div style="font-size: 48px; font-weight: 700; color: #4a90e2; margin-bottom: 15px;">4</div>
-                            <h3 style="color: #357abd; font-size: 1.2em; margin: 0 0 12px 0;">Set Up Your Class Website Structure</h3>
-                            <p style="color: #666; margin: 0; font-size: 0.95em; line-height: 1.6;">Plan and organize your site's pages, navigation, and content layout.</p>
-                        </div>
-                    </a>
-
-                    <!-- Step 5 -->
-                    <a href="{{ '/teachers/essential-pages/' | relative_url }}" style="text-decoration: none;">
-                        <div style="background: white; border: 2px solid #e8f3ff; border-radius: 12px; padding: 40px 30px; transition: all 0.3s; cursor: pointer;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 8px 25px rgba(74, 144, 226, 0.15)'" onmouseout="this.style.transform='none'; this.style.boxShadow='none'">
-                            <div style="font-size: 48px; font-weight: 700; color: #4a90e2; margin-bottom: 15px;">5</div>
-                            <h3 style="color: #357abd; font-size: 1.2em; margin: 0 0 12px 0;">Create Essential Pages</h3>
-                            <p style="color: #666; margin: 0; font-size: 0.95em; line-height: 1.6;">Build your About, Contact, Syllabus, and Class Information pages.</p>
-                        </div>
-                    </a>
-
-                    <!-- Step 6 -->
-                    <a href="{{ '/teachers/mobile-friendly/' | relative_url }}" style="text-decoration: none;">
-                        <div style="background: white; border: 2px solid #e8f3ff; border-radius: 12px; padding: 40px 30px; transition: all 0.3s; cursor: pointer;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 8px 25px rgba(74, 144, 226, 0.15)'" onmouseout="this.style.transform='none'; this.style.boxShadow='none'">
-                            <div style="font-size: 48px; font-weight: 700; color: #4a90e2; margin-bottom: 15px;">6</div>
-                            <h3 style="color: #357abd; font-size: 1.2em; margin: 0 0 12px 0;">Make Your Site Mobile-Friendly</h3>
-                            <p style="color: #666; margin: 0; font-size: 0.95em; line-height: 1.6;">Ensure students can access your site on phones, tablets, and computers.</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <!-- SECTION 3: Bottom CTAs -->
+        <!-- SECTION 2: Bottom CTAs -->
         <div style="background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); padding: 60px 20px; margin: 0 -20px;">
             <div style="max-width: 1200px; margin: 0 auto; text-align: center;">
                 <h2 style="color: #333; font-size: 2em; margin-bottom: 40px;">Ready to Find the Right Hosting?</h2>
