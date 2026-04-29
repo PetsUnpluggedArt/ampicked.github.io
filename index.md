@@ -48,11 +48,18 @@ const toolsData = [
     icon: "💰",
     url: "/calculator/",
     gradient: "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)"
+  },
+  {
+    title: "For Teachers",
+    excerpt: "Hosting guidance designed specifically for educators and student projects.",
+    icon: "🎓",
+    url: "/teachers/",
+    gradient: "linear-gradient(135deg, #4a90e2 0%, #357abd 100%)"
   }
 ];
 
 let currentToolIndex = 0;
-const toolsPerPage = 3;
+const toolsPerPage = 4;
 
 function renderToolsCarousel() {
   const container = document.getElementById('tools-carousel-container');
