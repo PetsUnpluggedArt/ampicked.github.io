@@ -41,10 +41,10 @@ permalink: /teachers/
 
         const teacherResourcesData = [
             {
-                title: "Compare Hosting",
-                excerpt: "Find the best hosting for teachers",
-                icon: "⚖️",
-                url: "{{ '/comparison/' | relative_url }}",
+                title: "Getting Started",
+                excerpt: "Step-by-step guide for teachers",
+                icon: "🚀",
+                url: "#getting-started",
                 gradient: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)"
             },
             {
@@ -55,10 +55,10 @@ permalink: /teachers/
                 gradient: "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)"
             },
             {
-                title: "Getting Started",
-                excerpt: "Step-by-step guide for teachers",
-                icon: "🚀",
-                url: "#getting-started",
+                title: "Compare Hosting",
+                excerpt: "Find the best hosting for teachers",
+                icon: "⚖️",
+                url: "{{ '/comparison/' | relative_url }}",
                 gradient: "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)"
             },
             {
