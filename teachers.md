@@ -44,7 +44,7 @@ permalink: /teachers/
                 title: "Getting Started",
                 excerpt: "Step-by-step guide for teachers",
                 icon: "🚀",
-                url: "#getting-started",
+                url: "{{ '/teachers/getting-started/' | relative_url }}",
                 gradient: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)"
             },
             {
