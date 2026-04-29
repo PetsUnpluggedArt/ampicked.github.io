@@ -9,8 +9,8 @@
     <meta name="author" content="Ampicked">
 
     <!-- Favicon -->
-    <link rel="icon" type="image/png" sizes="32x32" href="{{ '/assets/images/ampicked-logo.png' | relative_url }}">
-    <link rel="apple-touch-icon" href="{{ '/assets/images/ampicked-logo.png' | relative_url }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ '/assets/images/Ampicked.png' | relative_url }}">
+    <link rel="apple-touch-icon" href="{{ '/assets/images/Ampicked.png' | relative_url }}">
 
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-QKR6GF3W3X"></script>
@@ -76,7 +76,7 @@
         nav .logo-link {
             display: flex;
             align-items: center;
-            gap: 12px;
+            gap: 10px;
             text-decoration: none;
             color: white;
             transition: opacity 0.3s ease;
@@ -86,16 +86,23 @@
             opacity: 0.8;
         }
 
-        nav .logo-image {
+        nav .logo-icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
             height: 40px;
-            width: auto;
-            display: block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 8px;
+            font-weight: 700;
+            font-size: 1.5em;
+            color: white;
         }
 
         nav .logo-text {
             font-size: 1.3em;
             font-weight: 700;
-            color: #333;
+            color: white;
             letter-spacing: 0.5px;
         }
 
