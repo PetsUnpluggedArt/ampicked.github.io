@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% if page.title %}{{ page.title }} - Ampicked{% else %}Ampicked - Web Hosting Reviews & Comparisons for WordPress{% endif %}</title>
+    <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}Find the best WordPress hosting for your needs. Compare hosting providers by budget, performance, features, or use case. Expert reviews with benchmarks and pricing.{% endif %}">
+    <meta name="keywords" content="{% if page.keywords %}{{ page.keywords }}{% else %}WordPress hosting, web hosting reviews, best hosting providers, hosting comparison{% endif %}">
+    <meta name="author" content="Ampicked">
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QKR6GF3W3X"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-QKR6GF3W3X');
+    </script>
+
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2944839655624416"
+        crossorigin="anonymous"></script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Navigation */
+        nav {
+            background: #333;
+            padding: 15px 20px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        nav .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav a, nav span {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #667eea;
+        }
+
+        nav .logo {
+            font-size: 1.3em;
+            font-weight: 700;
+            color: #667eea;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        /* Teachers Page Specific */
+        .teachers-page {
+            background: linear-gradient(135deg, #f5f9ff 0%, #e8f3ff 100%);
+        }
+
+        .teachers-header {
+            background: linear-gradient(135deg, #4a90e2 0%, #357abd 100%);
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .teachers-header h1 {
+            font-size: 3em;
+            margin: 0 0 20px 0;
+            font-weight: 700;
+        }
+
+        .teachers-header p {
+            font-size: 1.3em;
+            margin: 0;
+            opacity: 0.95;
+        }
+
+        .teachers-section {
+            padding: 60px 0;
+        }
+
+        .teachers-section h2 {
+            color: #357abd;
+            font-size: 2em;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .teachers-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .teacher-card {
+            background: white;
+            padding: 35px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(74, 144, 226, 0.1);
+            transition: all 0.3s ease;
+            border-left: 5px solid #4a90e2;
+        }
+
+        .teacher-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(74, 144, 226, 0.15);
+        }
+
+        .teacher-card h3 {
+            color: #357abd;
+            font-size: 1.4em;
+            margin: 0 0 15px 0;
+        }
+
+        .teacher-card p {
+            color: #666;
+            line-height: 1.7;
+            margin: 0;
+        }
+
+        .teacher-card ul {
+            margin: 15px 0 0 0;
+            padding-left: 20px;
+            color: #666;
+        }
+
+        .teacher-card li {
+            margin-bottom: 8px;
+            line-height: 1.6;
+        }
+
+        .icon-large {
+            font-size: 2.5em;
+            margin-bottom: 15px;
+        }
+
+        .resource-box {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            margin-bottom: 30px;
+            border: 2px solid #e8f3ff;
+        }
+
+        .resource-box h3 {
+            color: #357abd;
+            margin-top: 0;
+            font-size: 1.3em;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #4a90e2 0%, #357abd 100%);
+            color: white;
+            padding: 15px 35px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            margin-top: 15px;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(74, 144, 226, 0.3);
+        }
+
+        .testimonial-box {
+            background: #f5f9ff;
+            padding: 30px;
+            border-radius: 12px;
+            border-left: 5px solid #4a90e2;
+            margin: 20px 0;
+            font-style: italic;
+            color: #555;
+        }
+
+        .testimonial-author {
+            font-style: normal;
+            font-weight: 600;
+            color: #357abd;
+            margin-top: 15px;
+        }
+
+        .warm-welcome {
+            background: linear-gradient(135deg, #fff5e6 0%, #ffe6cc 100%);
+            padding: 40px;
+            border-radius: 12px;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        .warm-welcome h2 {
+            color: #c67c2f;
+            margin-top: 0;
+        }
+
+        .warm-welcome p {
+            color: #8b6f47;
+            font-size: 1.1em;
+            line-height: 1.8;
+        }
+
+        /* Footer */
+        footer {
+            background: #333;
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+            margin-top: 60px;
+        }
+
+        footer p {
+            margin: 10px 0;
+        }
+
+        footer a {
+            color: #667eea;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .teachers-header h1 {
+                font-size: 2em;
+            }
+
+            .teachers-section h2 {
+                font-size: 1.5em;
+            }
+
+            .nav-links {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    {% include nav.html %}
+
+    <div class="teachers-page">
+        {{ content }}
+    </div>
+
+    {% include footer.html %}
+</body>
+</html>
