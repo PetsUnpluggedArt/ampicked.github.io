@@ -65,7 +65,7 @@ Main entry point with sections for:
 
 ### About (`about.md`)
 - Mission statement
-- Tony Johnson's background
+- Tony Jackson's background
 - Why trust Ampicked
 - Contact information
 
