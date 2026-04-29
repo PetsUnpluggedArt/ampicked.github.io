@@ -1,115 +1,93 @@
 ---
 layout: default
 title: FTC Disclosure - Ampicked
-description: Important information about Ampicked's affiliate relationships and how we fund our reviews.
-keywords: FTC disclosure, affiliate disclosure, sponsored content, advertising disclosure
+description: Federal Trade Commission (FTC) disclosure for Ampicked affiliate relationships and advertising
 permalink: /ftc-disclosure/
 ---
 
-<header>
-    <div class="container">
-        <h1>FTC Disclosure</h1>
-        <p>Transparency About How We Fund Ampicked</p>
-    </div>
-</header>
+# FTC Disclosure
 
-<main>
-    <div class="container">
-        <section style="max-width: 800px; margin: 0 auto;">
-            <div style="background: white; padding: 40px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);">
-                
-                <h2 style="color: #667eea; margin-top: 0;">Our Commitment to Transparency</h2>
-                
-                <p style="font-size: 1.05em; line-height: 1.8; color: #555; margin-bottom: 25px;">
-                    Ampicked is a reader-supported site. This disclosure explains how we monetize our content and why you can trust our recommendations.
-                </p>
+**Effective Date: April 29, 2026**
 
-                <hr style="border: none; border-top: 1px solid #eee; margin: 30px 0;">
+## Affiliate Links Disclosure
 
-                <h3 style="color: #333; margin-bottom: 15px;">Affiliate Relationships</h3>
-                <p style="font-size: 1.05em; line-height: 1.8; color: #555; margin-bottom: 20px;">
-                    <strong>Yes, we earn commissions.</strong> Ampicked participates in affiliate programs with hosting companies. When you click one of our recommendation links and make a purchase, we may receive a commission from that provider—at <strong>no additional cost to you</strong>.
-                </p>
+In compliance with the Federal Trade Commission's 16 CFR Part 255 (Guides Concerning the Use of Endorsements and Testimonials in Advertising), Ampicked discloses that we may earn affiliate commissions when you click on links to hosting providers and make a purchase.
 
-                <div style="background: #f8f9fa; padding: 25px; border-radius: 8px; border-left: 4px solid #667eea; margin-bottom: 25px;">
-                    <p style="margin: 0; font-size: 1.05em; line-height: 1.8; color: #555;">
-                        <strong>What this means for you:</strong> Our reviews are independently researched and written. We only recommend hosts we genuinely believe will serve your needs. The commission we earn never influences our opinion—we test real performance, measure actual uptime, and evaluate support quality objectively.
-                    </p>
-                </div>
+### How Our Affiliate Relationships Work
 
-                <hr style="border: none; border-top: 1px solid #eee; margin: 30px 0;">
+When you click on a link to a hosting provider on our Site and complete a purchase, we may receive a commission at no additional cost to you. This means:
 
-                <h3 style="color: #333; margin-bottom: 15px;">How This Works</h3>
-                <ul style="font-size: 1.05em; line-height: 1.8; color: #555; padding-left: 20px;">
-                    <li style="margin-bottom: 15px;">
-                        <strong>You pay the same price.</strong> Affiliate links don't increase your cost. Many hosts even offer exclusive discounts to affiliate visitors.
-                    </li>
-                    <li style="margin-bottom: 15px;">
-                        <strong>We only recommend what we'd use.</strong> Every host we recommend is one we'd happily use ourselves or recommend to clients.
-                    </li>
-                    <li style="margin-bottom: 15px;">
-                        <strong>Our reviews are based on real testing.</strong> We measure load times, monitor uptime, test support response, and evaluate real-world performance—not marketing claims.
-                    </li>
-                    <li style="margin-bottom: 15px;">
-                        <strong>We disclose every affiliate relationship.</strong> Each review clearly indicates if it contains affiliate links.
-                    </li>
-                </ul>
+- **You pay the same price** whether you click through our link or go directly to the provider
+- **We earn a small commission** from the hosting provider for referrals
+- **Your purchasing decision should not be influenced** by our affiliate relationships
 
-                <hr style="border: none; border-top: 1px solid #eee; margin: 30px 0;">
+### Affiliated Companies and Programs
 
-                <h3 style="color: #333; margin-bottom: 15px;">Current Affiliate Partners</h3>
-                <p style="font-size: 1.05em; line-height: 1.8; color: #555; margin-bottom: 20px;">
-                    Ampicked has affiliate relationships with the following hosting providers:
-                </p>
-                <ul style="font-size: 1.05em; line-height: 1.8; color: #555; padding-left: 20px; margin-bottom: 25px;">
-                    <li style="margin-bottom: 10px;">SiteGround</li>
-                    <li style="margin-bottom: 10px;">WP Engine</li>
-                    <li style="margin-bottom: 10px;">Hostinger</li>
-                    <li style="margin-bottom: 10px;">Bluehost</li>
-                    <li style="margin-bottom: 10px;">Kinsta</li>
-                    <li style="margin-bottom: 10px;">Pressable</li>
-                    <li style="margin-bottom: 10px;">DigitalOcean</li>
-                </ul>
-                <p style="font-size: 1em; color: #888; font-style: italic;">
-                    * Additional affiliate partnerships may be added over time. This list is updated periodically.
-                </p>
+Ampicked participates in affiliate programs with the following hosting providers:
 
-                <hr style="border: none; border-top: 1px solid #eee; margin: 30px 0;">
+- Bluehost
+- SiteGround
+- HostGator
+- WP Engine
+- Kinsta
+- DreamHost
+- GoDaddy
+- Namecheap
+- And other web hosting and technology companies
 
-                <h3 style="color: #333; margin-bottom: 15px;">What We Don't Do</h3>
-                <ul style="font-size: 1.05em; line-height: 1.8; color: #555; padding-left: 20px;">
-                    <li style="margin-bottom: 15px;">
-                        <strong>We don't accept paid reviews.</strong> Hosting companies cannot pay us for positive reviews. Our testing process is independent.
-                    </li>
-                    <li style="margin-bottom: 15px;">
-                        <strong>We don't hide negative findings.</strong> Every host has weaknesses. We show you the cons alongside the pros.
-                    </li>
-                    <li style="margin-bottom: 15px;">
-                        <strong>We don't prioritize high-commission hosts.</strong> A host paying 50% commission isn't better than one paying 10%. We recommend based on value, not commission.
-                    </li>
-                    <li style="margin-bottom: 15px;">
-                        <strong>We don't mislead about performance.</strong> If a host is slow, we say it's slow—even if they're a big advertiser.
-                    </li>
-                </ul>
+### Our Commitment to Honesty
 
-                <hr style="border: none; border-top: 1px solid #eee; margin: 30px 0;">
+We disclose affiliate relationships because:
 
-                <h3 style="color: #333; margin-bottom: 15px;">Your Trust Is Our Currency</h3>
-                <p style="font-size: 1.05em; line-height: 1.8; color: #555; margin-bottom: 20px;">
-                    We built Ampicked because we saw too many business owners get burned by hosting decisions. Our reputation is built on helping you make the right choice—not on earning commissions. If a host isn't worth recommending, we won't recommend them regardless of affiliate terms.
-                </p>
-                <p style="font-size: 1.05em; line-height: 1.8; color: #555;">
-                    <strong>Questions?</strong> Reach out at <a href="mailto:hello@ampicked.com" style="color: #667eea; text-decoration: none;">hello@ampicked.com</a>. We're happy to explain any aspect of how we operate.
-                </p>
+1. **Transparency**: You have the right to know when we earn commissions
+2. **FTC Compliance**: We follow all FTC guidelines on endorsements and testimonials
+3. **Trust**: Honest disclosure builds trust with our audience
+4. **Integrity**: Our reviews are based on actual performance, not financial incentives
 
-                <div style="background: #f0f4ff; padding: 25px; border-radius: 8px; margin-top: 30px; text-align: center;">
-                    <p style="margin: 0; font-size: 1.05em; color: #555;">
-                        <strong>Last updated:</strong> April 2026<br>
-                        <span style="font-size: 0.95em; color: #888;">This disclosure is reviewed quarterly to ensure accuracy and compliance with FTC guidelines.</span>
-                    </p>
-                </div>
+## Honest Reviews and Recommendations
 
-            </div>
-        </section>
-    </div>
-</main>
+Our reviews and recommendations are based on:
+
+- **Actual performance testing** of hosting services
+- **Feature comparison** across providers
+- **Uptime and reliability** data
+- **Customer support quality**
+- **Pricing and value** assessment
+- **Industry expertise** and research
+
+We do not allow affiliate commissions to influence our honest assessments. If a hosting provider pays us a commission, it does not guarantee a positive review or higher ranking on our comparison pages.
+
+## Advertising Disclosure
+
+### Google AdSense
+
+Ampicked displays advertisements through Google AdSense. These ads are not endorsements and do not represent our opinion of advertised products or services. Google may use cookies to serve ads based on your prior visits to our Site or other websites.
+
+### Sponsored Content
+
+If Ampicked publishes sponsored content or paid advertisements clearly marked as such, we will:
+- Clearly label the content as "sponsored," "advertisement," or "paid promotion"
+- Use visual indicators to distinguish sponsored content
+- Disclose the sponsor's identity
+
+## Third-Party Links
+
+Our Site contains links to third-party websites. We are not responsible for the privacy practices, advertising, or content of these external sites. We encourage you to review their terms and policies before providing any information.
+
+## Questions About Our Disclosures
+
+If you have questions about our affiliate relationships, advertising, or FTC compliance, please contact us:
+
+**Email**: hello@ampicked.com
+
+We are committed to operating transparently and in full compliance with FTC regulations.
+
+## FTC Resources
+
+For more information about FTC endorsement and testimonial guidelines, visit:
+- [FTC Endorsement Guides](https://www.ftc.gov/sites/default/files/attachments/system/files/endorsement_guides_final_508.pdf)
+- [FTC Affiliate Marketing Guide](https://www.ftc.gov/business-guidance/blog/2017/06/ftc-101-affiliate-advertising-disclosures)
+
+---
+
+*This FTC Disclosure is effective as of April 29, 2026. We reserve the right to update this disclosure as our affiliate partnerships change.*
