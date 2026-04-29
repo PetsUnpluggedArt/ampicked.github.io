@@ -1,6 +1,9 @@
 <nav>
     <div class="container">
-        <span class="logo">🏆 Ampicked</span>
+        <a href="{{ '/' | relative_url }}" class="logo-link">
+            <img src="{{ '/assets/images/ampicked-logo.png' | relative_url }}" alt="Ampicked Logo" class="logo-image">
+            <span class="logo-text">Ampicked</span>
+        </a>
         <div class="nav-links">
             <a href="{{ '/' | relative_url }}">Home</a>
             <a href="{{ '/quiz/' | relative_url }}">Quiz</a>

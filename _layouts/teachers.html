@@ -8,6 +8,10 @@
     <meta name="keywords" content="{% if page.keywords %}{{ page.keywords }}{% else %}WordPress hosting, web hosting reviews, best hosting providers, hosting comparison{% endif %}">
     <meta name="author" content="Ampicked">
 
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ '/assets/images/ampicked-logo.png' | relative_url }}">
+    <link rel="apple-touch-icon" href="{{ '/assets/images/ampicked-logo.png' | relative_url }}">
+
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-QKR6GF3W3X"></script>
     <script>
@@ -69,10 +73,30 @@
             color: #667eea;
         }
 
-        nav .logo {
+        nav .logo-link {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+            color: white;
+            transition: opacity 0.3s ease;
+        }
+
+        nav .logo-link:hover {
+            opacity: 0.8;
+        }
+
+        nav .logo-image {
+            height: 40px;
+            width: auto;
+            display: block;
+        }
+
+        nav .logo-text {
             font-size: 1.3em;
             font-weight: 700;
-            color: #667eea;
+            color: #333;
+            letter-spacing: 0.5px;
         }
 
         .nav-links {
