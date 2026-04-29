@@ -10,15 +10,15 @@
 | Bluehost | [PENDING] | ⏳ Under Review | `2026-04-27-bluehost-review.md` | 🔲 Placeholder CTA |
 | Bluehost Pro | [SHARED] | ⏳ Under Review | `2026-04-27-bluehost-pro-review.md` | 🔲 Placeholder CTA |
 | DigitalOcean | [PENDING] | ⏳ Under Review | `2026-04-27-digitalocean-review.md` | 🔲 Placeholder CTA |
-| Kinsta | [PENDING] | ⏳ Under Review | `2026-04-27-kinsta-review.md` | 🔲 Placeholder CTA |
+| Kinsta | `https://kinsta.com/?kaid=VSNSKPPPBLOM` | ✅ Active | `2026-04-27-kinsta-review.md` | ✅ Active CTA |
 | Pressable | [PENDING] | ⏳ Under Review | `2026-04-27-pressable-review.md` | 🔲 Placeholder CTA |
 | Linode | [PENDING] | ⏳ Under Review | `2026-04-27-linode-review.md` | 🔲 Placeholder CTA |
 
 ## CTA Implementation Status
 
 All 9 review files now have CTAs installed:
-- ✅ **1 Active CTA** (SiteGround) - Links to affiliate URL
-- 🔲 **8 Placeholder CTAs** (All others) - Shows "Coming Soon - Affiliate Link Pending"
+- ✅ **2 Active CTAs** (SiteGround, Kinsta) - Links to affiliate URLs
+- 🔲 **7 Placeholder CTAs** (All others) - Shows "Coming Soon - Affiliate Link Pending"
 
 ## How to Update When Approved
 
