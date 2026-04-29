@@ -25,6 +25,20 @@ permalink: /teachers/
         </div>
 
         <script>
+        // Detect if there are teacher articles
+        const teacherArticles = [
+            {% for post in site.posts %}
+                {% if post.categories contains "teachers" %}
+                {
+                    title: "{{ post.title }}",
+                    url: "{{ post.url | relative_url }}"
+                },
+                {% endif %}
+            {% endfor %}
+        ];
+
+        const latestTeacherArticleUrl = teacherArticles.length > 0 ? teacherArticles[0].url : "{{ '/blog/' | relative_url }}";
+
         const teacherResourcesData = [
             {
                 title: "Compare Hosting",
@@ -37,7 +51,7 @@ permalink: /teachers/
                 title: "Latest Articles",
                 excerpt: "Read teacher-focused articles",
                 icon: "📚",
-                url: "{{ '/blog/' | relative_url }}",
+                url: latestTeacherArticleUrl,
                 gradient: "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)"
             },
             {
