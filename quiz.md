@@ -1,8 +1,8 @@
 ---
 layout: default
-title: Hosting Quiz - Find Your Perfect WordPress Host
-description: Answer 5 quick questions and get a personalized hosting recommendation matched to your needs.
-keywords: hosting quiz, find hosting, hosting recommendation, WordPress hosting selector
+title: WordPress Hosting Quiz - Find Your Perfect Host (Including for Teachers)
+description: Answer 5 quick questions and get personalized hosting recommendations matched to your needs - including special recommendations for teachers and educators.
+keywords: hosting quiz, WordPress hosting recommendation, teacher hosting recommendation, find the best hosting, educational hosting
 permalink: /quiz/
 ---
 

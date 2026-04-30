@@ -1,8 +1,8 @@
 ---
 layout: calculator
-title: Hosting ROI Calculator - See Your Savings
-description: Calculate how much poor hosting is costing you. Real numbers on downtime, performance, and revenue impact.
-keywords: hosting ROI, hosting cost calculator, downtime cost, hosting savings
+title: WordPress Hosting Cost Calculator - See Your Real Savings
+description: Calculate how much poor hosting is costing you in hidden expenses, downtime, and performance issues. Includes scenarios for teachers and educational websites.
+keywords: hosting cost calculator, WordPress hosting ROI, downtime cost, teacher budget hosting, hosting savings
 permalink: /calculator/
 ---
 

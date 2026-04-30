@@ -1,15 +1,15 @@
 ---
 layout: default
-title: About Ampicked - Expert Web Hosting Reviews
-description: Learn about Tony Jackson, the expert behind Ampicked, and our mission to help business owners choose the right WordPress hosting.
-keywords: web hosting expert, Tony Jackson, Ampicked mission, hosting reviews
+title: About Ampicked - Honest WordPress Hosting Reviews
+description: Learn about Tony Jackson and Ampicked's mission to help business owners, educators, and entrepreneurs choose the right WordPress hosting without the sales pitch.
+keywords: WordPress hosting, Tony Jackson, Ampicked, honest reviews, hosting comparison
 permalink: /about/
 ---
 
 <header>
     <div class="container">
         <h1>About Ampicked</h1>
-        <p>Expert Web Hosting Reviews Built on Real Experience</p>
+        <p>Honest WordPress Hosting Guidance Built on Real Experience</p>
     </div>
 </header>
 
@@ -38,7 +38,7 @@ permalink: /about/
                         I started my career as a web developer, building WordPress sites for agencies and small businesses. During those years, I noticed a pattern: most business owners had NO IDEA whether their hosting was appropriate for their actual needs. They either overpaid dramatically (throwing money at "premium" hosts they didn't need) or cut corners (picking cheap hosting that crashed during traffic spikes).
                     </p>
                     <p style="margin-bottom: 20px;">
-                        This gap between what businesses needed and what they were actually buying frustrated me. So I decided to fix it by becoming a hosting expert.
+                        This gap between what businesses needed and what they were actually buying frustrated me. So I decided to fix it by doing real testing, benchmarking actual performance, and sharing what I learned.
                     </p>
 
                     <h3 style="color: #667eea; margin-top: 30px; margin-bottom: 15px;">What I've Done</h3>

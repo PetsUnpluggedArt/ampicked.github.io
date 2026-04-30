@@ -1,16 +1,24 @@
 ---
 layout: default
-title: Ampicked - Find Your Perfect WordPress Host
-description: Interactive hosting recommendations and comparisons. Take a quiz, compare providers, or use our ROI calculator.
-keywords: WordPress hosting, hosting comparison, best hosting, hosting reviews
+title: Ampicked - The Teacher's Guide to WordPress Hosting and Website Growth
+description: WordPress resources for educators. Build your classroom website, manage student projects, create online courses. Hosting guidance, tutorials, and tools for teachers.
+keywords: teacher WordPress guide, educator hosting, classroom website, online teaching platform, WordPress for education
 permalink: /
 ---
 
-<!-- SECTION 1: Interactive Tools Carousel -->
-<div style="background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); padding: 60px 20px; margin: -60px -20px 40px -20px; border-bottom: 2px solid #dee2e6;">
+<!-- SECTION 1: Teacher-Focused Hero -->
+<div style="background: linear-gradient(135deg, #4a90e2 0%, #357abd 100%); padding: 60px 20px; margin: -60px -20px 40px -20px; text-align: center; color: white;">
   <div style="max-width: 1200px; margin: 0 auto;">
-    <h2 style="text-align: center; color: #333; font-size: 2.5em; margin-bottom: 50px;">Expert WordPress Hosting Guidance</h2>
-    <p style="text-align: center; color: #666; font-size: 1.1em; margin-bottom: 40px;">Stop guessing about hosting. Get personalized recommendations based on your situation.</p>
+    <h1 style="font-size: 2.2em; margin: 0 0 20px 0; font-weight: 700;">Your Classroom Deserves a Website That Works</h1>
+    <p style="font-size: 1.15em; margin: 0; opacity: 0.95;">Ampicked helps educators choose, build, and grow their WordPress classroom presence. Whether you're launching your first site or scaling to multiple classes.</p>
+  </div>
+</div>
+
+<!-- SECTION 2: Interactive Tools Carousel -->
+<div style="background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); padding: 60px 20px; margin: 0 -20px 40px -20px; border-bottom: 2px solid #dee2e6;">
+  <div style="max-width: 1200px; margin: 0 auto;">
+    <h2 style="text-align: center; color: #333; font-size: 2em; margin-bottom: 15px;">Get Started on Your Teaching Journey</h2>
+    <p style="text-align: center; color: #666; font-size: 1em; margin-bottom: 40px;">Three ways to find your ideal hosting and build your classroom online presence.</p>
     
     <div id="tools-carousel" style="position: relative;">
       <div id="tools-carousel-container" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; margin: 30px 0;">
@@ -116,39 +124,39 @@ document.addEventListener('DOMContentLoaded', renderToolsCarousel);
     
     <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px;">
       <div style="text-align: center; padding: 20px;">
-        <div style="font-size: 40px; margin-bottom: 15px;">📊</div>
-        <h4 style="color: #667eea; font-size: 1.1em;">Data-Driven</h4>
-        <p style="color: #666;">Real benchmarks, actual customer experiences, no fluff or sales pitch.</p>
+        <div style="font-size: 40px; margin-bottom: 15px;">🎓</div>
+        <h4 style="color: #667eea; font-size: 1.1em;">Teacher-Focused</h4>
+        <p style="color: #666;">Everything's built around educator needs—from single classroom sites to school-wide deployments.</p>
       </div>
 
       <div style="text-align: center; padding: 20px;">
-        <div style="font-size: 40px; margin-bottom: 15px;">🎯</div>
-        <h4 style="color: #667eea; font-size: 1.1em;">Personalized</h4>
-        <p style="color: #666;">We don't have a "best host." We have the best host for YOUR situation.</p>
+        <div style="font-size: 40px; margin-bottom: 15px;">📈</div>
+        <h4 style="color: #667eea; font-size: 1.1em;">Progressive Learning</h4>
+        <p style="color: #666;">Start with a basic classroom website. Scale to hosting student projects and online courses.</p>
       </div>
 
       <div style="text-align: center; padding: 20px;">
-        <div style="font-size: 40px; margin-bottom: 15px;">📝</div>
-        <h4 style="color: #667eea; font-size: 1.1em;">Detailed Guides</h4>
-        <p style="color: #666;">In-depth articles covering hosting types, comparisons, and decision frameworks.</p>
+        <div style="font-size: 40px; margin-bottom: 15px;">💰</div>
+        <h4 style="color: #667eea; font-size: 1.1em;">Budget Optimization</h4>
+        <p style="color: #666;">Maximize tight school budgets. Real cost breakdowns and money-saving strategies for educators.</p>
       </div>
 
       <div style="text-align: center; padding: 20px;">
-        <div style="font-size: 40px; margin-bottom: 15px;">💡</div>
-        <h4 style="color: #667eea; font-size: 1.1em;">Cost Analysis</h4>
-        <p style="color: #666;">See the real cost of cheap hosting. Not just monthly fees—hidden costs too.</p>
+        <div style="font-size: 40px; margin-bottom: 15px;">🔧</div>
+        <h4 style="color: #667eea; font-size: 1.1em;">Practical Solutions</h4>
+        <p style="color: #666;">Ready-to-use setups: multisite classrooms, student portfolios, school district configurations.</p>
       </div>
 
       <div style="text-align: center; padding: 20px;">
-        <div style="font-size: 40px; margin-bottom: 15px;">⚡</div>
-        <h4 style="color: #667eea; font-size: 1.1em;">Interactive</h4>
-        <p style="color: #666;">Quiz, calculator, and comparison tools to make decisions faster.</p>
+        <div style="font-size: 40px; margin-bottom: 15px;">📚</div>
+        <h4 style="color: #667eea; font-size: 1.1em;">Comprehensive Guides</h4>
+        <p style="color: #666;">Deep dives into hosting for teaching, student projects, and educational technology integration.</p>
       </div>
 
       <div style="text-align: center; padding: 20px;">
-        <div style="font-size: 40px; margin-bottom: 15px;">👨‍💼</div>
-        <h4 style="color: #667eea; font-size: 1.1em;">Expert Advice</h4>
-        <p style="color: #666;">Written by someone who's hosted dozens of WordPress sites.</p>
+        <div style="font-size: 40px; margin-bottom: 15px;">✅</div>
+        <h4 style="color: #667eea; font-size: 1.1em;">No Affiliate Bias</h4>
+        <p style="color: #666;">Honest recommendations based on what actually works for educators, not commission incentives.</p>
       </div>
     </div>
   </div>
@@ -176,19 +184,19 @@ document.addEventListener('DOMContentLoaded', renderToolsCarousel);
 <script>
 const blogArticles = [
   {
-    title: "How to Choose the Right Web Host",
-    excerpt: "A complete guide to selecting hosting. Covers shared, managed WordPress, cloud, and VPS options with provider recommendations.",
-    url: "/choose-hosting/"
+    title: "The Best WordPress Hosting for Online Teaching",
+    excerpt: "Find reliable hosting for virtual classroom platforms. Covers Bluehost, SiteGround, Hostinger, and WP Engine with teacher-specific recommendations.",
+    url: "/blog/best-hosting-online-teaching/"
   },
   {
-    title: "Why Cheap Hosting Costs You More",
-    excerpt: "The true cost of cheap hosting: downtime, slow performance, poor support. See the ROI of upgrading.",
-    url: "/cheap-hosting-costs/"
+    title: "WordPress Hosting for Student Projects and Class Websites",
+    excerpt: "Guide to hosting student learning projects. Learn multisite setup, assignment ideas, security considerations, and budget-friendly tips.",
+    url: "/blog/wordpress-hosting-student-projects/"
   },
   {
-    title: "5 Hosting Mistakes That Kill SEO",
-    excerpt: "Your hosting choice affects your search rankings. Discover the 5 hosting mistakes that tank SEO performance.",
-    url: "/wordpress-hosting-mistakes/"
+    title: "Affordable WordPress Hosting for Educational Budgets",
+    excerpt: "Budget-friendly hosting solutions for teachers and schools. Real cost breakdowns, hidden savings tricks, and school scenarios.",
+    url: "/blog/affordable-hosting-educational-budgets/"
   }
 ];
 
@@ -248,31 +256,44 @@ document.addEventListener('DOMContentLoaded', renderCarousel);
 <!-- SECTION 4: Getting Started -->
 <div style="background: white; padding: 60px 20px; margin: 0 -20px 40px -20px;">
   <div style="max-width: 1200px; margin: 0 auto;">
-    <h2 style="text-align: center; color: #333; font-size: 2.2em; margin-bottom: 50px;">Not Sure Where to Start?</h2>
+    <h2 style="text-align: center; color: #333; font-size: 2.2em; margin-bottom: 20px;">Choose Your Path</h2>
+    <p style="text-align: center; color: #666; font-size: 1em; margin-bottom: 50px;">Whether you're launching your first classroom site or scaling to support student projects, we have the guidance you need.</p>
 
     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 25px; margin-bottom: 40px;">
       <div style="background: #f9f9f9; border-left: 4px solid #667eea; padding: 30px; border-radius: 8px;">
-        <div style="font-size: 24px; margin-bottom: 10px;">⚡</div>
-        <p style="color: #666; margin: 15px 0;"><strong>If you have 2 minutes:</strong></p>
-        <p style="color: #666; margin: 15px 0;"><a href="/quiz/" style="color: #0066cc; text-decoration: none; font-weight: 600;">Take the quiz</a> to get an instant recommendation tailored to your situation.</p>
+        <div style="font-size: 24px; margin-bottom: 10px;">🚀</div>
+        <p style="color: #666; margin: 15px 0;"><strong>Just Starting Out?</strong></p>
+        <p style="color: #666; margin: 15px 0;"><a href="/quiz/" style="color: #0066cc; text-decoration: none; font-weight: 600;">Take the quiz</a> to discover the right hosting for your classroom needs in 2 minutes.</p>
       </div>
 
       <div style="background: #f9f9f9; border-left: 4px solid #f093fb; padding: 30px; border-radius: 8px;">
-        <div style="font-size: 24px; margin-bottom: 10px;">📊</div>
-        <p style="color: #666; margin: 15px 0;"><strong>If you want to compare:</strong></p>
-        <p style="color: #666; margin: 15px 0;"><a href="/comparison/" style="color: #0066cc; text-decoration: none; font-weight: 600;">See our hosting comparison</a> with filters by price, features, and use case.</p>
+        <div style="font-size: 24px; margin-bottom: 10px;">👨‍🏫</div>
+        <p style="color: #666; margin: 15px 0;"><strong>Planning Student Projects?</strong></p>
+        <p style="color: #666; margin: 15px 0;"><a href="/blog/wordpress-hosting-student-projects/" style="color: #0066cc; text-decoration: none; font-weight: 600;">Read our student projects guide</a> for multisite setup, assignment ideas, and security tips.</p>
       </div>
 
       <div style="background: #f9f9f9; border-left: 4px solid #4facfe; padding: 30px; border-radius: 8px;">
         <div style="font-size: 24px; margin-bottom: 10px;">💰</div>
-        <p style="color: #666; margin: 15px 0;"><strong>If you want numbers:</strong></p>
-        <p style="color: #666; margin: 15px 0;"><a href="/calculator/" style="color: #0066cc; text-decoration: none; font-weight: 600;">Use the ROI calculator</a> to see how much poor hosting is costing you.</p>
+        <p style="color: #666; margin: 15px 0;"><strong>Tight School Budget?</strong></p>
+        <p style="color: #666; margin: 15px 0;"><a href="/blog/affordable-hosting-educational-budgets/" style="color: #0066cc; text-decoration: none; font-weight: 600;">See our budget guide</a> with cost breakdowns and savings strategies for schools.</p>
       </div>
 
-      <div style="background: #f9f9f9; border-left: 4px solid #28a745; padding: 30px; border-radius: 8px; grid-column: 1 / -1;">
-        <div style="font-size: 24px; margin-bottom: 10px;">📚</div>
-        <p style="color: #666; margin: 15px 0;"><strong>If you want to learn:</strong></p>
-        <p style="color: #666; margin: 15px 0;"><a href="/choose-hosting/" style="color: #0066cc; text-decoration: none; font-weight: 600;">Read the complete hosting guide</a> with decision frameworks and provider details.</p>
+      <div style="background: #f9f9f9; border-left: 4px solid #28a745; padding: 30px; border-radius: 8px;">
+        <div style="font-size: 24px; margin-bottom: 10px;">📊</div>
+        <p style="color: #666; margin: 15px 0;"><strong>Want to Compare Options?</strong></p>
+        <p style="color: #666; margin: 15px 0;"><a href="/comparison/" style="color: #0066cc; text-decoration: none; font-weight: 600;">View our provider comparison</a> with side-by-side feature analysis and filtering by use case.</p>
+      </div>
+
+      <div style="background: #f9f9f9; border-left: 4px solid #ffc107; padding: 30px; border-radius: 8px;">
+        <div style="font-size: 24px; margin-bottom: 10px;">🎓</div>
+        <p style="color: #666; margin: 15px 0;"><strong>Teaching Online Classes?</strong></p>
+        <p style="color: #666; margin: 15px 0;"><a href="/blog/best-hosting-online-teaching/" style="color: #0066cc; text-decoration: none; font-weight: 600;">Read the online teaching guide</a> covering virtual classroom platforms and course hosting.</p>
+      </div>
+
+      <div style="background: #f9f9f9; border-left: 4px solid #28a745; padding: 30px; border-radius: 8px;">
+        <div style="font-size: 24px; margin-bottom: 10px;">🔢</div>
+        <p style="color: #666; margin: 15px 0;"><strong>Show Me the Numbers?</strong></p>
+        <p style="color: #666; margin: 15px 0;"><a href="/calculator/" style="color: #0066cc; text-decoration: none; font-weight: 600;">Use our ROI calculator</a> to see the hidden costs of poor hosting and real savings potential.</p>
       </div>
     </div>
   </div>
@@ -284,13 +305,13 @@ document.addEventListener('DOMContentLoaded', renderCarousel);
     <h2 style="text-align: center; color: #333; font-size: 2.2em; margin-bottom: 40px;">About Ampicked</h2>
 
     <div style="background: white; border-radius: 12px; padding: 40px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); max-width: 800px; margin: 0 auto;">
-      <p style="color: #666; line-height: 1.8; font-size: 1.05em; margin-bottom: 20px;">Ampicked exists because choosing a web host is confusing and stressful. There are hundreds of companies. They all claim to be the "best." The marketing is overwhelming.</p>
+      <p style="color: #666; line-height: 1.8; font-size: 1.05em; margin-bottom: 20px;">Ampicked exists for teachers who want their classroom online. Teachers juggle hundreds of responsibilities. They shouldn't have to spend weeks researching hosting options or trying to understand technical jargon.</p>
 
-      <p style="color: #666; line-height: 1.8; font-size: 1.05em; margin-bottom: 20px;">I've hosted dozens of WordPress sites. I've dealt with downtime, slow performance, and poor support. I've also experienced the opposite—reliable, fast hosting with expert help.</p>
+      <p style="color: #666; line-height: 1.8; font-size: 1.05em; margin-bottom: 20px;">The hosting market is confusing. Hundreds of companies. All claim to be best. Pricing is deliberately opaque. The marketing targets businesses, not educators with tight budgets.</p>
 
-      <p style="color: #666; line-height: 1.8; font-size: 1.05em; margin-bottom: 20px;">The difference is huge. It's the difference between your site staying online and losing customers to downtime. Between ranking in Google and getting buried. Between smooth operation and constant firefighting.</p>
+      <p style="color: #666; line-height: 1.8; font-size: 1.05em; margin-bottom: 20px;">Teachers need honest guidance. Not affiliate recommendations. Not enterprise solutions designed for Fortune 500 companies. Real solutions for real classroom scenarios—from a single teacher's website to a school district managing dozens of sites.</p>
 
-      <p style="color: #666; line-height: 1.8; font-size: 1.05em; margin-bottom: 0;">This site cuts through the noise. No affiliate pressure. No hidden agendas. Just honest data and personalized recommendations.</p>
+      <p style="color: #666; line-height: 1.8; font-size: 1.05em; margin-bottom: 0;">Ampicked is where educators come to advance their website journey. We help you choose hosting, build your classroom presence, manage student projects, and scale as your needs grow. No noise. No hidden agendas. Just practical guidance from someone who understands your reality.</p>
 
       <p style="margin-top: 25px; text-align: center;">
         <a href="/about/" style="color: #0066cc; text-decoration: none; font-weight: 600; font-size: 1.05em;">Learn more about Ampicked →</a>
@@ -302,8 +323,11 @@ document.addEventListener('DOMContentLoaded', renderCarousel);
 <!-- SECTION 6: CTA -->
 <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 60px 20px; margin: 0 -20px; text-align: center; color: white;">
   <div style="max-width: 1200px; margin: 0 auto;">
-    <h2 style="color: white; font-size: 2em; margin-bottom: 20px;">Ready to find your perfect host?</h2>
-    <p style="color: rgba(255,255,255,0.95); font-size: 1.1em; margin-bottom: 30px;">Start with the quiz, compare options, or dive into the guides.</p>
-    <a href="/quiz/" style="display: inline-block; padding: 16px 40px; background: white; color: #667eea; text-decoration: none; border-radius: 6px; font-weight: 700; font-size: 1.05em; transition: transform 0.3s, box-shadow 0.3s; box-shadow: 0 4px 15px rgba(0,0,0,0.2);" onmouseover="this.style.transform='translateY(-3px)'; this.style.boxShadow='0 8px 25px rgba(0,0,0,0.3)'" onmouseout="this.style.transform='none'; this.style.boxShadow='0 4px 15px rgba(0,0,0,0.2)'">Take the Quiz Now</a>
+    <h2 style="color: white; font-size: 2em; margin-bottom: 20px;">Your classroom deserves a website that works</h2>
+    <p style="color: rgba(255,255,255,0.95); font-size: 1.1em; margin-bottom: 30px;">Find the right hosting, build your online presence, and grow with confidence. Start today with our quiz or explore a guide that matches your situation.</p>
+    <div>
+      <a href="/quiz/" style="display: inline-block; padding: 16px 40px; background: white; color: #667eea; text-decoration: none; border-radius: 6px; font-weight: 700; font-size: 1.05em; margin: 8px; transition: transform 0.3s, box-shadow 0.3s; box-shadow: 0 4px 15px rgba(0,0,0,0.2);" onmouseover="this.style.transform='translateY(-3px)'; this.style.boxShadow='0 8px 25px rgba(0,0,0,0.3)'" onmouseout="this.style.transform='none'; this.style.boxShadow='0 4px 15px rgba(0,0,0,0.2)'">Take the Quiz Now</a>
+      <a href="/teachers/" style="display: inline-block; padding: 16px 40px; background: transparent; color: white; border: 2px solid white; text-decoration: none; border-radius: 6px; font-weight: 700; font-size: 1.05em; margin: 8px; transition: transform 0.3s, box-shadow 0.3s, background 0.3s;" onmouseover="this.style.transform='translateY(-3px)'; this.style.background='rgba(255,255,255,0.2)'" onmouseout="this.style.transform='none'; this.style.background='transparent'">Explore for Teachers</a>
+    </div>
   </div>
 </div>
